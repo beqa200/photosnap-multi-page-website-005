@@ -1,1 +1,1 @@
-photosnap-multi-page-website-005
+photosnap-multi-page-website
