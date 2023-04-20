@@ -18,6 +18,9 @@ function App() {
       id: 2,
       path: './assets/home/mobile/create-and-share.jpg',
       alt: 'createImg',
+      title: 'Create and share your photo stories. ',
+      text: 'Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.',
+      invite: 'GET AN INVITE',
     },
     {
       id: 3,
@@ -41,6 +44,14 @@ function App() {
     },
     
   ];
+  //  const texts =[
+  //   {
+  //     title: '',
+  //     text: '',
+  //     invite: '',
+  //   },
+    
+  //  ]
   
   return (
     <>
