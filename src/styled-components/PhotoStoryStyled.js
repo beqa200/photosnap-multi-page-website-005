@@ -18,8 +18,15 @@ width:375px;
 height:auto;
 box-sizing:border-box;
 padding-bottom:72px;
-
-
+position:relative;
+`;
+const Stick=styled.div`
+position: absolute;
+width:128px;
+height:6px;
+top:0;
+left:33px;
+background:linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
 `;
 const Title =styled.h1`
 font-weight:700;
@@ -78,4 +85,4 @@ margin-top:23px;
 `;
 
 
-export {Container,Title,TextContainer, Text,Invite,Icon,ImageWrapper,BlackTitle,BlackText,BlackInvite}
+export {Container,Title,TextContainer, Text,Invite,Icon,ImageWrapper,BlackTitle,BlackText,BlackInvite,Stick}

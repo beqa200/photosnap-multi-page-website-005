@@ -10,7 +10,7 @@ import {
   ImageWrapper,
   BlackTitle,
   BlackText,
-  BlackInvite
+  BlackInvite,Stick
 } from "../styled-components/PhotoStoryStyled";
 // import styled from 'styled-components';
 
@@ -23,6 +23,7 @@ export default function Home(props) {
         </div>
 
         <TextContainer>
+          <Stick></Stick>
           <Title>{props.images[1].title}</Title>
           <Text>{props.images[1].text}</Text>
           <ImageWrapper>
