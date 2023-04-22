@@ -9,10 +9,9 @@ const Container = styled.div`
     display:grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  @media screen and (min-width: 1440px){
-    width: 1440px;
+  @media screen and (min-width: 1020px){
+    width: 1020px;
     height:650px;
-
   }
 `;
 
@@ -31,6 +30,10 @@ const TextContainer = styled.div`
     padding: 173px 54px 173px 54px;
     grid-column: 1;
   }
+  @media screen and (min-width: 1020px){
+    width: 387px;
+    height:650px;
+  }
 `;
 const ImgWrapper = styled.div`
   @media screen and (min-width: 768px) {
@@ -38,6 +41,10 @@ const ImgWrapper = styled.div`
     height: 650px;
     order: 1;
     flex: 1;
+  }
+  @media screen and (min-width: 1020px){
+    width: 830px;
+    height:650px;
   }
 `;
 const IconWrapper = styled.div`
@@ -108,13 +115,15 @@ const BlackInvite = styled.div`
 const Icon = styled.img`
   fill: #ffffff;
   max-width: 41px;
-  
   margin-right: 10px;
   @media screen and (min-width: 768px) {
     max-width: 100%;
     height: 100%;
     object-fit:contain;
-  
+  }
+  @media screen and (min-width: 1020px){
+    width: 830px;
+    height:650px;
   }
 `;
 
