@@ -3,17 +3,19 @@ import styled from "styled-components";
  const Container= styled.div`
 width:375px;
 height:713px;
-background-color:#000000;
+// background-color:#000000;
 `;
 // const Image =styled.img`
 // width:375px;
 // height:562px;
 // `;
 const TextContainer=styled.div`
-margin-top:72px;
-margin-left:33px;
-margin-right:24px;
-margin-bottom:16px;
+padding-top:72px;
+padding-left:33px;
+padding-right:24px;
+padding-bottom:16px;
+width:375px;
+box-sizing:border-box;
 
 `;
 const Title =styled.h1`
@@ -23,18 +25,53 @@ line-height:40px;
 letter-spacing:3.33px;
 color:#ffffff;
 `;
+const BlackTitle =styled.h1`
+
+font-weight:700;
+font-size:32px;
+line-height:40px;
+letter-spacing:3.33px;
+color:#000000;
+`;
 const Text=styled.p`
 color:#ffffff;
 font-size:15px;
 line-height:25px;
 `;
-const Invite=styled.p`
+const BlackText=styled.p`
+color:#000000;
+font-size:15px;
+line-height:25px;
+`;
+const Invite=styled.div`
 font-weight:700;
 font-size:12px;
 line-height:15.62px;
 color:#ffffff;
+margin-right:18px;
+
+`;
+const BlackInvite=styled.div`
+font-weight:700;
+font-size:12px;
+line-height:15.62px;
+color:#000000;
+margin-right:18px;
+
+`;
+const Icon =styled.img`
+fill: #ffffff;
+width:41px;
+margin-right: 10px;
+  
+`;
+const ImageWrapper =styled.div`
+display:flex;
+// justify-content: space-around; 
+
+}
 
 `;
 
 
-export {Container,Title,TextContainer, Text,Invite}
+export {Container,Title,TextContainer, Text,Invite,Icon,ImageWrapper,BlackTitle,BlackText,BlackInvite}
