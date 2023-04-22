@@ -5,15 +5,16 @@ import {
   TextContainer,
   Text,
   Invite,
+  ImgWrapper
 } from "../styled-components/PhotoStoryStyled";
 
 export default function Features(props) {
   return (
     <>
       <Container style={{ backgroundColor: '#000000' }}>
-        <div>
+        <ImgWrapper>
           <img src={props.images[4].path} alt={props.images[4].alt} />
-        </div>
+        </ImgWrapper>
 
         <TextContainer>
           <Title>{props.images[4].title}</Title>

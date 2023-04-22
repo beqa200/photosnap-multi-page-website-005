@@ -5,25 +5,25 @@ import {
   TextContainer,
   Text,
   Invite,
-  ImageWrapper,
-  Icon
+  IconWrapper,
+  Icon,ImgWrapper
 } from "../styled-components/PhotoStoryStyled";
 
 export default function Stories(props) {
   return (
     <>
       <Container style={{ backgroundColor: '#000000' }}>
-        <div>
+        <ImgWrapper>
           <img src={props.images[3].path} alt={props.images[3].alt} />
-        </div>
+        </ImgWrapper>
 
         <TextContainer>
           <Title>{props.images[3].title}</Title>
           <Text>{props.images[3].text}</Text>
-          <ImageWrapper>
+          <IconWrapper>
             <Invite>{props.images[3].invite}</Invite>
             <Icon src={props.images[3].icon} />
-          </ImageWrapper>
+          </IconWrapper>
         </TextContainer>
       </Container>
     </>

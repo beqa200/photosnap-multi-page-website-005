@@ -7,10 +7,12 @@ import {
   Text,
   Invite,
   Icon,
-  ImageWrapper,
+  IconWrapper,
   BlackTitle,
   BlackText,
-  BlackInvite,Stick
+  BlackInvite,
+  Stick,
+  ImgWrapper
 } from "../styled-components/PhotoStoryStyled";
 // import styled from 'styled-components';
 
@@ -18,48 +20,48 @@ export default function Home(props) {
   return (
     <>
       <Container style={{ backgroundColor: 'black' }}>
-        <div className="ImgWrapper">
+        <ImgWrapper>
           <img src={props.images[1].path} alt={props.images[1].alt} />
-        </div>
+        </ImgWrapper>
 
         <TextContainer>
           <Stick></Stick>
           <Title>{props.images[1].title}</Title>
           <Text>{props.images[1].text}</Text>
-          <ImageWrapper>
+          <IconWrapper>
           <Invite>{props.images[1].invite}</Invite>
           <Icon src={props.images[1].icon}/>
-          </ImageWrapper>
+          </IconWrapper>
         </TextContainer>
       </Container>
 
       <Container style={{ backgroundColor: '#ffffff' }} >
-        <div >
+        <ImgWrapper >
           <img src={props.images[0].path} alt={props.images[0].alt} />
-        </div>
+        </ImgWrapper>
 
         <TextContainer>
           <BlackTitle>{props.images[0].title}</BlackTitle>
           <BlackText>{props.images[0].text}</BlackText>
-          <ImageWrapper>
+          <IconWrapper>
           <BlackInvite>{props.images[1].invite}</BlackInvite>
           <Icon src={props.images[1].icon}/>
-          </ImageWrapper>
+          </IconWrapper>
         </TextContainer>
       </Container>
 
       <Container style={{ backgroundColor: '#ffffff' }}>
-        <div className="ImgWrapper">
+        <ImgWrapper>
           <img src={props.images[2].path} alt={props.images[2].alt} />
-        </div>
+        </ImgWrapper>
 
         <TextContainer>
           <BlackTitle>{props.images[2].title}</BlackTitle>
           <BlackText>{props.images[2].text}</BlackText>
-          <ImageWrapper>
+          <IconWrapper>
           <BlackInvite>{props.images[1].invite}</BlackInvite>
           <Icon src={props.images[1].icon}/>
-          </ImageWrapper>
+          </IconWrapper>
         </TextContainer>
       </Container>
     </>
