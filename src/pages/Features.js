@@ -10,15 +10,14 @@ import {
 export default function Features(props) {
   return (
     <>
-      <Container>
-        <div className="ImgWrapper">
+      <Container style={{ backgroundColor: '#000000' }}>
+        <div>
           <img src={props.images[4].path} alt={props.images[4].alt} />
         </div>
 
         <TextContainer>
           <Title>{props.images[4].title}</Title>
           <Text>{props.images[4].text}</Text>
-          <Invite>{props.images[4].invite}</Invite>
         </TextContainer>
       </Container>
     </>

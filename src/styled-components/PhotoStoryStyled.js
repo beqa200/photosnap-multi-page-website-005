@@ -2,7 +2,7 @@ import styled from "styled-components";
 
  const Container= styled.div`
 width:375px;
-height:713px;
+height:auto;
 // background-color:#000000;
 `;
 // const Image =styled.img`
@@ -10,12 +10,15 @@ height:713px;
 // height:562px;
 // `;
 const TextContainer=styled.div`
-padding-top:72px;
+padding-top:32px;
 padding-left:33px;
 padding-right:24px;
-padding-bottom:16px;
+// padding-bottom:16px;
 width:375px;
+height:auto;
 box-sizing:border-box;
+padding-bottom:72px;
+
 
 `;
 const Title =styled.h1`
@@ -49,7 +52,6 @@ font-size:12px;
 line-height:15.62px;
 color:#ffffff;
 margin-right:18px;
-
 `;
 const BlackInvite=styled.div`
 font-weight:700;
@@ -58,17 +60,19 @@ line-height:15.62px;
 color:#000000;
 margin-right:18px;
 
+
 `;
 const Icon =styled.img`
 fill: #ffffff;
 width:41px;
 margin-right: 10px;
+
   
 `;
 const ImageWrapper =styled.div`
 display:flex;
-// justify-content: space-around; 
-
+height:20px;
+margin-top:23px;
 }
 
 `;

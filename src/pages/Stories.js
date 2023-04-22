@@ -12,8 +12,8 @@ import {
 export default function Stories(props) {
   return (
     <>
-      <Container>
-        <div className="ImgWrapper">
+      <Container style={{ backgroundColor: '#000000' }}>
+        <div>
           <img src={props.images[3].path} alt={props.images[3].alt} />
         </div>
 
