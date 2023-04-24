@@ -7,7 +7,7 @@ import {
   Invite,
   Icon,
   IconWrapper,
-  ImgWrapper
+  ImgWrapper,Image
 } from "../styled-components/PhotoStoryStyled";
 // import styled from 'styled-components';
 
@@ -43,7 +43,7 @@ export default function PhotoStory(props) {
 
       <Container>
         <ImgWrapper>
-          <img src={props.images[2].path} alt={props.images[2].alt} />
+          <Image src={props.images[2].path} alt={props.images[2].alt} />
         </ImgWrapper>
 
         <TextContainer>

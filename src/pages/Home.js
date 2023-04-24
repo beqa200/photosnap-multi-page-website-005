@@ -12,7 +12,8 @@ import {
   BlackText,
   BlackInvite,
   Stick,
-  ImgWrapper
+  ImgWrapper,
+  Image
 } from "../styled-components/PhotoStoryStyled";
 // import styled from 'styled-components';
 
@@ -21,7 +22,7 @@ export default function Home(props) {
     <>
       <Container style={{ backgroundColor: 'black' }}>
         <ImgWrapper>
-          <img src={props.images[1].path} alt={props.images[1].alt} />
+          <Image src={props.images[1].path} alt={props.images[1].alt} />
         </ImgWrapper>
 
         <TextContainer>
@@ -37,7 +38,7 @@ export default function Home(props) {
 
       <Container style={{ backgroundColor: '#ffffff' }} >
         <ImgWrapper >
-          <img src={props.images[0].path} alt={props.images[0].alt} />
+          <Image src={props.images[0].path} alt={props.images[0].alt} />
         </ImgWrapper>
 
         <TextContainer>
@@ -52,7 +53,7 @@ export default function Home(props) {
 
       <Container style={{ backgroundColor: '#ffffff' }}>
         <ImgWrapper>
-          <img src={props.images[2].path} alt={props.images[2].alt} />
+          <Image src={props.images[2].path} alt={props.images[2].alt} />
         </ImgWrapper>
 
         <TextContainer>

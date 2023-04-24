@@ -36,7 +36,7 @@ const TextContainer = styled.div`
   }
 `;
 const ImgWrapper = styled.div`
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     width: 273px;
     height: 650px;
     order: 1;
@@ -47,13 +47,19 @@ const ImgWrapper = styled.div`
     height:650px;
   }
 `;
-const IconWrapper = styled.div`
-height:15px;
-margin-top:23px;
-grid-column: 2;
+const Image=styled.img`
+@media (min-width: 768px) {
+  // width: 273px;
+  width:100%;
+  height: 650px;
+  object-fit:cover;
 }
-
+@media (min-width: 1020px){
+  width: 830px;
+  height:650px;
+}
 `;
+
 const Stick = styled.div`
   position: absolute;
   width: 128px;
@@ -111,7 +117,14 @@ const BlackInvite = styled.div`
   color: #000000;
   margin-right: 18px;
 `;
+const IconWrapper = styled.div`
+display:flex:
+height:15px;
+margin-top:23px;
+grid-column: 2;
+}
 
+`;
 const Icon = styled.img`
   fill: #ffffff;
   max-width: 41px;
@@ -122,8 +135,8 @@ const Icon = styled.img`
     object-fit:contain;
   }
   @media screen and (min-width: 1020px){
-    width: 830px;
-    height:650px;
+    max-width: 100%;
+    height:100%;
   }
 `;
 
@@ -140,4 +153,5 @@ export {
   BlackInvite,
   Stick,
   ImgWrapper,
+  Image
 };

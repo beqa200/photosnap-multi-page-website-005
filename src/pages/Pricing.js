@@ -5,7 +5,8 @@ import {
   TextContainer,
   Text,
   Invite,
-  ImgWrapper
+  ImgWrapper,
+  Image
 } from "../styled-components/PhotoStoryStyled";
 
 export default function Pricing(props) {
@@ -13,7 +14,7 @@ export default function Pricing(props) {
     <>
      <Container style={{ backgroundColor: '#000000' }}>
         <ImgWrapper>
-          <img src={props.images[5].path} alt={props.images[5].alt} />
+          <Image src={props.images[5].path} alt={props.images[5].alt} />
         </ImgWrapper>
 
         <TextContainer>
