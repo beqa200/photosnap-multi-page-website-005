@@ -15,12 +15,12 @@ import {
   ImgWrapper,
   Image
 } from "../styled-components/PhotoStoryStyled";
-// import styled from 'styled-components';
+import styled from 'styled-components';
 
 export default function Home(props) {
   return (
     <>
-      <Container style={{ backgroundColor: 'black' }}>
+      <Container style={{ backgroundColor: 'black' }} ordering='row-reverse'>
         <ImgWrapper>
           <Image src={props.images[1].path} alt={props.images[1].alt} />
         </ImgWrapper>
@@ -31,17 +31,17 @@ export default function Home(props) {
           <Text>{props.images[1].text}</Text>
           <IconWrapper>
           <Invite>{props.images[1].invite}</Invite>
-          <Icon src={props.images[1].icon}/>
+          <Icon src={props.images[1].icon} style={{filter: 'invert(98%)brightness(118%) contrast(100%)'}}/>
           </IconWrapper>
         </TextContainer>
       </Container>
 
       <Container style={{ backgroundColor: '#ffffff' }} >
-        <ImgWrapper >
-          <Image src={props.images[0].path} alt={props.images[0].alt} />
+        <ImgWrapper>
+          <Image src={props.images[0].path} alt={props.images[0].alt }  />
         </ImgWrapper>
 
-        <TextContainer>
+        <TextContainer style={{}}>
           <BlackTitle>{props.images[0].title}</BlackTitle>
           <BlackText>{props.images[0].text}</BlackText>
           <IconWrapper>
@@ -51,7 +51,7 @@ export default function Home(props) {
         </TextContainer>
       </Container>
 
-      <Container style={{ backgroundColor: '#ffffff' }}>
+      <Container style={{ backgroundColor: '#ffffff' }} ordering='row-reverse'>
         <ImgWrapper>
           <Image src={props.images[2].path} alt={props.images[2].alt} />
         </ImgWrapper>

@@ -14,9 +14,9 @@ import {
 export default function Stories(props) {
   return (
     <>
-      <Container style={{ backgroundColor: '#000000' }}>
-        <ImgWrapper>
-          <Image src={props.images[3].path} alt={props.images[3].alt} />
+      <Container>
+        <ImgWrapper bg='./assets/stories/mobile/moon-of-appalacia.jpg'>
+          <Image src={props.images[3].path} alt={props.images[3].alt } className="noneDiv"/>
         </ImgWrapper>
 
         <TextContainer>

@@ -24,7 +24,7 @@ export default function PhotoStory(props) {
           <Text>{props.images[1].text}</Text>
           <IconWrapper>
           <Invite>{props.images[1].invite}</Invite>
-          <Icon src={props.images[1].icon}/>
+          <Icon src={props.images[1].icon} color="#ffffff"/>
           </IconWrapper>
         </TextContainer>
       </Container>

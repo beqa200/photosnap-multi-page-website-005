@@ -1,63 +1,65 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-  width: 375px;
-  height: auto;
   @media screen and (min-width: 768px) {
-    width: 768px;
-    height:650px;
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: ${({ ordering }) => ordering};
   }
-  @media screen and (min-width: 1020px){
-    width: 1020px;
-    height:650px;
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
   }
 `;
 
 const TextContainer = styled.div`
+  position: relative;
   padding-top: 32px;
   padding-left: 33px;
   padding-right: 24px;
-  // padding-bottom:16px;
   width: 375px;
-  height: auto;
+  height: 650px;
   box-sizing: border-box;
   padding-bottom: 72px;
-  position: relative;
+
   @media screen and (min-width: 768px) {
     width: 495px;
+    height: 650px;
     padding: 173px 54px 173px 54px;
     grid-column: 1;
   }
-  @media screen and (min-width: 1020px){
-    width: 387px;
-    height:650px;
+  @media screen and (min-width: 1440px) {
+    width: 610px;
+    height: 650px;
   }
 `;
 const ImgWrapper = styled.div`
   @media (min-width: 768px) {
-    width: 273px;
+    .noneDiv{
+      display:none;
+    }
+    display: flex;
     height: 650px;
-    order: 1;
-    flex: 1;
+    background-size:cover;
+    background-repeat: no-repeat;
+  
+    // display:${({none}) =>none};
+    background-image:url(${({bg})=>bg});
   }
-  @media screen and (min-width: 1020px){
+  @media screen and (min-width: 1440px) {
     width: 830px;
-    height:650px;
+    height: 650px;
   }
 `;
-const Image=styled.img`
-@media (min-width: 768px) {
-  // width: 273px;
-  width:100%;
-  height: 650px;
-  object-fit:cover;
-}
-@media (min-width: 1020px){
-  width: 830px;
-  height:650px;
-}
+const Image = styled.img`
+  @media (min-width: 768px) {
+    width: 273px;
+    height: 650px;
+    object-fit: cover;
+    object-position: 35% 100%;
+  }
+  @media (min-width: 1440px) {
+    width: 830px;
+    height: 650px;
+  }
 `;
 
 const Stick = styled.div`
@@ -132,11 +134,11 @@ const Icon = styled.img`
   @media screen and (min-width: 768px) {
     max-width: 100%;
     height: 100%;
-    object-fit:contain;
+    object-fit: contain;
   }
-  @media screen and (min-width: 1020px){
+  @media screen and (min-width: 1440px) {
     max-width: 100%;
-    height:100%;
+    height: 100%;
   }
 `;
 
@@ -153,5 +155,5 @@ export {
   BlackInvite,
   Stick,
   ImgWrapper,
-  Image
+  Image,
 };
