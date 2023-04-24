@@ -11,7 +11,7 @@ import {
 } from "../styled-components/Header.styled";
 import { Link } from "react-router-dom";
 
-const links = [
+export const links = [
   {
     name: "STORIES",
     link: "/stories",
@@ -29,7 +29,6 @@ const links = [
 export default function Header() {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
 
-  //   () => setIsMenuVisible(!isMenuVisible)
   return (
     <StyledHeader>
       <LogoTitle>
