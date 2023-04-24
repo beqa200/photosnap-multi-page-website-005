@@ -24,6 +24,7 @@ export const Menu = styled.nav`
     top: 72px;
     left: 0px;
     padding: 12px 32px 32px;
+    z-index: 99;
 `
 
 export const LinkTitle = styled.h1`
