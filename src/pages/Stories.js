@@ -1,5 +1,18 @@
-import React from 'react'
+import React from "react";
+import {
+  Container,
+  Title,
+  TextContainer,
+  Text,
+  Invite,
+  IconWrapper,
+  Icon,
+  ImgWrapper,
+  Image
+} from "../styled-components/PhotoStoryStyled";
 import Image from '../components/Image'
+
+
 
 const content = [
   {
@@ -100,12 +113,29 @@ const content = [
   },
 ]
 
-export default function Stories() {
+export default function Stories(props) {
   return (
-    <div>
+    <>
+      <Container bg='./assets/stories/mobile/moon-of-appalacia.jpg' >
+        <ImgWrapper >
+          <Image src={props.images[3].path} alt={props.images[3].alt } className="noneDiv"/>
+        </ImgWrapper>
+
+        <TextContainer bgColor="black" transparentColor='transparent'>
+          <Title>{props.images[3].title}</Title>
+          <Text>{props.images[3].text}</Text>
+          <IconWrapper>
+            <Invite>{props.images[3].invite}</Invite>
+            <Icon src={props.images[3].icon} style={{filter: 'invert(98%)brightness(118%) contrast(100%)'}} />
+          </IconWrapper>
+        </TextContainer>
+      </Container>
+          <div>
       {content.map((item) => (
         <Image bg={item.bg} dateTxt={item.date} title={item.title} creator={item.creator} key={Math.random()}/>
       ))}
     </div>
-  )
+    </>
+  );
+
 }
