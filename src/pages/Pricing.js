@@ -8,6 +8,8 @@ import {
   ImgWrapper,
   Image
 } from "../styled-components/PhotoStoryStyled";
+import Beta from '../components/Beta'
+
 
 export default function Pricing(props) {
   return (
@@ -22,6 +24,7 @@ export default function Pricing(props) {
           <Text>{props.images[5].text}</Text>
         </TextContainer>
       </Container>
+       <Beta />
     </>
   )
 }

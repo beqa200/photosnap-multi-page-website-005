@@ -9,6 +9,8 @@ import {
   Image
 } from "../styled-components/PhotoStoryStyled";
 
+import Beta from '../components/Beta'
+
 export default function Features(props) {
   return (
     <>
@@ -22,6 +24,7 @@ export default function Features(props) {
           <Text>{props.images[4].text}</Text>
         </TextContainer>
       </Container>
+            <Beta />
     </>
   );
 }

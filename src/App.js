@@ -3,10 +3,12 @@ import Pricing from "./pages/Pricing";
 import Stories from "./pages/Stories";
 import Home from "./pages/Home";
 import { Routes, Route } from "react-router-dom";
-import PhotoStory from "./components/PhotoStory";
 import React from "react";
-// import {GlobalStyles} from "./styled-components/GlobalStyles";
-import { GlobalStyles } from "./styled-components/GlobalStyles";
+import Header from "./components/Header";
+import { GLobalStyled } from "./styled-components/Global.styled";
+import Footer from "./components/Footer";
+
+
 
 function App() {
   const images = [
@@ -99,13 +101,16 @@ function App() {
 
   return (
     <>
-      <GlobalStyles/>
+      <GLobalStyled />
+      <Header />
+
       <Routes>
         <Route path="/" element={<Home images={images} />} />
         <Route path="/stories" element={<Stories images={images} />} />
         <Route path="/features" element={<Features images={images} />} />
         <Route path="/pricing" element={<Pricing images={images} />} />
       </Routes>
+      <Footer />
     </>
   );
 }
