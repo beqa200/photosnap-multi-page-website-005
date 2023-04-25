@@ -81,12 +81,12 @@ const Image = styled.img`
 `;
 
 const Stick = styled.div`
-margin-top:-4px;
+// margin-top:-4px;
   position: absolute;
   width: 128px;
   height: 6px;
-  // top: -6px;
-  // left: 33px;
+  top: -1gitpx;
+  left: 33px;
  
   background: linear-gradient(
     26.57deg,
