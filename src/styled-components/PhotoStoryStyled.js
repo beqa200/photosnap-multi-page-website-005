@@ -4,14 +4,20 @@ const Container = styled.div`
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: ${({ ordering }) => ordering};
+    height: 650px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image:url(${({bg})=>bg});
   }
   @media screen and (min-width: 1440px) {
     width: 1440px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image:url(${({bg})=>bg});
   }
 `;
 
 const TextContainer = styled.div`
-  position: relative;
   padding-top: 32px;
   padding-left: 33px;
   padding-right: 24px;
@@ -36,15 +42,12 @@ const ImgWrapper = styled.div`
     .noneDiv{
       display:none;
     }
-    display: flex;
-    height: 650px;
-    background-size:cover;
-    background-repeat: no-repeat;
-  
-    // display:${({none}) =>none};
-    background-image:url(${({bg})=>bg});
+   
   }
   @media screen and (min-width: 1440px) {
+    .noneDiv{
+      display:none;
+    }
     width: 830px;
     height: 650px;
   }
