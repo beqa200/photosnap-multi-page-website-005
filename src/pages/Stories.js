@@ -8,7 +8,7 @@ import {
   IconWrapper,
   Icon,
   ImgWrapper,
-  Image
+  ImageDiv
 } from "../styled-components/PhotoStoryStyled";
 import Image from '../components/Image'
 
@@ -118,7 +118,7 @@ export default function Stories(props) {
     <>
       <Container bg='./assets/stories/mobile/moon-of-appalacia.jpg' >
         <ImgWrapper >
-          <Image src={props.images[3].path} alt={props.images[3].alt } className="noneDiv"/>
+          <ImageDiv src={props.images[3].path} alt={props.images[3].alt } className="noneDiv"/>
         </ImgWrapper>
 
         <TextContainer bgColor="black" transparentColor='transparent'>

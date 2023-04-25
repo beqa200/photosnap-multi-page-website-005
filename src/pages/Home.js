@@ -12,7 +12,7 @@ import {
   BlackInvite,
   Stick,
   ImgWrapper,
-  Image
+  ImageDiv
 } from "../styled-components/PhotoStoryStyled";
 import styled from 'styled-components';
 import Image from '../components/Image';
@@ -51,7 +51,7 @@ const minContent = [
     <>
       <Container style={{ backgroundColor: 'black' }} ordering='row-reverse'>
         <ImgWrapper>
-          <Image src={props.images[1].path} alt={props.images[1].alt} />
+          <ImageDiv src={props.images[1].path} alt={props.images[1].alt} />
         </ImgWrapper>
 
         <TextContainer>
@@ -67,7 +67,7 @@ const minContent = [
 
       <Container style={{ backgroundColor: '#ffffff' }} >
         <ImgWrapper>
-          <Image src={props.images[0].path} alt={props.images[0].alt }  />
+          <ImageDiv src={props.images[0].path} alt={props.images[0].alt }  />
         </ImgWrapper>
 
         <TextContainer style={{}}>
@@ -82,7 +82,7 @@ const minContent = [
 
       <Container style={{ backgroundColor: '#ffffff' }} ordering='row-reverse'>
         <ImgWrapper>
-          <Image src={props.images[2].path} alt={props.images[2].alt} />
+          <ImageDiv src={props.images[2].path} alt={props.images[2].alt} />
         </ImgWrapper>
         <TextContainer>
           <BlackTitle>{props.images[2].title}</BlackTitle>

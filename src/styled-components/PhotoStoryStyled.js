@@ -65,7 +65,7 @@ height:317px;
     height: 650px;
   }
 `;
-const Image = styled.img`
+const ImageDiv = styled.img`
     width:375px;
     height:100%;
   @media (min-width: 768px) {
@@ -175,5 +175,5 @@ export {
   BlackInvite,
   Stick,
   ImgWrapper,
-  Image,
+  ImageDiv,
 };
