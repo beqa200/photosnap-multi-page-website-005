@@ -1,36 +1,45 @@
 import styled from "styled-components";
 
 const Container = styled.div`
+
+  background-color: ${({ transparentColor }) => transparentColor};
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: ${({ ordering }) => ordering};
-    height: 650px;
-    background-size:cover;
+    min-height: 650px;
+    width: 768px;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-image:url(${({bg})=>bg});
+    background-position: center;
+    background-image: url(${({ bg }) => bg});
   }
   @media screen and (min-width: 1440px) {
     width: 1440px;
-    background-size:cover;
+    height: 650px;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-image:url(${({bg})=>bg});
+    background-image: url(${({ bg }) => bg});
+    background-color: url(${({ transparentColor }) => transparentColor});
   }
 `;
 
 const TextContainer = styled.div`
+  position: relative;
   padding-top: 32px;
   padding-left: 33px;
   padding-right: 24px;
   width: 375px;
-  height: 650px;
+  // height: 650px;
   box-sizing: border-box;
-  padding-bottom: 72px;
-
+  // padding-bottom: 72px;
+  background-color: ${({ bgColor }) => bgColor};
   @media screen and (min-width: 768px) {
+    // display:flex;
     width: 495px;
     height: 650px;
     padding: 173px 54px 173px 54px;
     grid-column: 1;
+    background-color: ${({ transparentColor }) => transparentColor};
   }
   @media screen and (min-width: 1440px) {
     width: 610px;
@@ -38,39 +47,47 @@ const TextContainer = styled.div`
   }
 `;
 const ImgWrapper = styled.div`
+width:375px;
+height:317px;
+
   @media (min-width: 768px) {
-    .noneDiv{
-      display:none;
+    .noneDiv {
+      display: none;
     }
-   
+    width:273px;
+    height:650px;
   }
   @media screen and (min-width: 1440px) {
-    .noneDiv{
-      display:none;
+    .noneDiv {
+      display: none;
     }
     width: 830px;
     height: 650px;
   }
 `;
 const Image = styled.img`
+    width:375px;
+    height:100%;
   @media (min-width: 768px) {
     width: 273px;
-    height: 650px;
+    height:100%;
     object-fit: cover;
     object-position: 35% 100%;
   }
   @media (min-width: 1440px) {
     width: 830px;
-    height: 650px;
+    height: 100%;
   }
 `;
 
 const Stick = styled.div`
+margin-top:-4px;
   position: absolute;
   width: 128px;
   height: 6px;
-  top: 0;
-  left: 33px;
+  // top: -6px;
+  // left: 33px;
+ 
   background: linear-gradient(
     26.57deg,
     #ffc593 0%,
@@ -124,7 +141,7 @@ const BlackInvite = styled.div`
 `;
 const IconWrapper = styled.div`
 display:flex:
-height:15px;
+height: 10px;
 margin-top:23px;
 grid-column: 2;
 }

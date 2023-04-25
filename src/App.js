@@ -99,7 +99,7 @@ function App() {
 
   return (
     <>
-      <GlobalStyles />
+      <GlobalStyles/>
       <Routes>
         <Route path="/" element={<Home images={images} />} />
         <Route path="/stories" element={<Stories images={images} />} />

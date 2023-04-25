@@ -14,6 +14,10 @@ import url('https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;700&fa
     display:flex;
     justify-content:center;
   }
+  *{
+    margin: 0;
+    padding: 0;
+  }
 `;
 
 export default GlobalStyles;
