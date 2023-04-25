@@ -44,11 +44,12 @@ export const Invite = styled.div`
     width: 175px;
     display: flex;
     gap: 22px;
+    align-items: center;
 `
 
 export const InviteText = styled(LinkTitleFooter)`
     text-align: start;
-    margin-top: 0px;
+    margin-top: 3px;
 `
 
 export const FooterText = styled.p`
