@@ -6,7 +6,8 @@ import {
   Text,
   Invite,
   ImgWrapper,
-  ImageDiv
+  ImageDiv, 
+  Stick
 } from "../styled-components/PhotoStoryStyled";
 import Beta from '../components/Beta'
 
@@ -19,7 +20,8 @@ export default function Pricing(props) {
           <ImageDiv src={props.images[5].path} alt={props.images[5].alt} />
         </ImgWrapper>
 
-        <TextContainer>
+        <TextContainer ptop="72px" pbot="72px">
+          <Stick />
           <Title>{props.images[5].title}</Title>
           <Text>{props.images[5].text}</Text>
         </TextContainer>

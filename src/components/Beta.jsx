@@ -4,7 +4,7 @@ import {
   TextBeta,
   InviteBeta,
 } from "../styled-components/Beta.styled";
-import { InviteText, Icon } from "../styled-components/Footer.styled";
+import { InviteText, IconArrow } from "../styled-components/Footer.styled";
 
 export default function Beta() {
   return (
@@ -13,7 +13,7 @@ export default function Beta() {
       <TextBeta>We’re in beta. Get your invite today!</TextBeta>
       <InviteBeta>
         <InviteText>GET AN INVITE</InviteText>
-        <Icon src="./assets/shared/desktop/arrow.svg" alt="arrow" />
+        <IconArrow src="./assets/shared/desktop/arrow.svg" alt="arrow" />
       </InviteBeta>
     </StyledBeta>
   );

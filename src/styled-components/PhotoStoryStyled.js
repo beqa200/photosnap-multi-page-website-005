@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-
+  width: 375px;
+  margin: auto;
   background-color: ${({ transparentColor }) => transparentColor};
   @media screen and (min-width: 768px) {
     display: flex;
@@ -25,13 +26,12 @@ const Container = styled.div`
 
 const TextContainer = styled.div`
   position: relative;
-  padding-top: 32px;
+  padding-top: ${({ptop}) => ptop};
+  padding-bottom: ${({pbot}) => pbot};
   padding-left: 33px;
   padding-right: 24px;
   width: 375px;
-  // height: 650px;
   box-sizing: border-box;
-  // padding-bottom: 72px;
   background-color: ${({ bgColor }) => bgColor};
   @media screen and (min-width: 768px) {
     // display:flex;
@@ -85,7 +85,7 @@ const Stick = styled.div`
   position: absolute;
   width: 128px;
   height: 6px;
-  top: -1gitpx;
+  top: -1px;
   left: 33px;
  
   background: linear-gradient(
@@ -114,16 +114,23 @@ const BlackTitle = styled.h1`
   line-height: 40px;
   letter-spacing: 3.33px;
   color: #000000;
+  width: ${({wd}) => wd};
 `;
 const Text = styled.p`
   color: #ffffff;
+  font-weight: 400;
   font-size: 15px;
   line-height: 25px;
+  margin-top: 16px;
+  opacity: 0.6;
 `;
 const BlackText = styled.p`
   color: #000000;
+  font-weight: 400;
   font-size: 15px;
   line-height: 25px;
+  margin-top: 16px;
+  opacity: 0.6;
 `;
 const Invite = styled.div`
   font-weight: 700;
@@ -140,13 +147,12 @@ const BlackInvite = styled.div`
   margin-right: 18px;
 `;
 const IconWrapper = styled.div`
-display:flex:
+display:flex;
 height: 10px;
 margin-top:23px;
 grid-column: 2;
-}
-
 `;
+
 const Icon = styled.img`
   fill: #ffffff;
   max-width: 41px;

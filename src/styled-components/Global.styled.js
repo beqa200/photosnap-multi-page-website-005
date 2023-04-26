@@ -6,6 +6,5 @@ export const GLobalStyled = createGlobalStyle`
         padding: 0px;
         box-sizing: border-box;
         font-family: 'DM Sans', sans-serif;
-
     }
 `

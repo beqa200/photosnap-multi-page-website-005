@@ -12,7 +12,7 @@ export const StyledDiv = styled.div`
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 375px;
         height: 100%;
         z-index: 1;
         filter: brightness(50%);
@@ -37,11 +37,12 @@ export const Creator = styled(DateP)`
 `
 
 export const Hr = styled.hr`
-    width: 100%;
+    width: 291.67px;
     height: 1px;
     border: none;
     background-color: white;
     margin-top: 16px;
+    opacity: 0.25;
 `
 
 export const ReadDiv = styled.div`

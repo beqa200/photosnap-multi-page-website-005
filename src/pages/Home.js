@@ -16,6 +16,7 @@ import {
 } from "../styled-components/PhotoStoryStyled";
 import styled from 'styled-components';
 import Image from '../components/Image';
+import { ImagesWrapper } from "../styled-components/ImagesWrapper.styled";
 
 
 
@@ -54,7 +55,7 @@ const minContent = [
           <ImageDiv src={props.images[1].path} alt={props.images[1].alt} />
         </ImgWrapper>
 
-        <TextContainer>
+        <TextContainer ptop="72px" pbot="72px">
           <Stick></Stick>
           <Title>{props.images[1].title}</Title>
           <Text>{props.images[1].text}</Text>
@@ -70,8 +71,8 @@ const minContent = [
           <ImageDiv src={props.images[0].path} alt={props.images[0].alt }  />
         </ImgWrapper>
 
-        <TextContainer style={{}}>
-          <BlackTitle>{props.images[0].title}</BlackTitle>
+        <TextContainer ptop="72px" pbot="72px">
+          <BlackTitle wd="260px">{props.images[0].title}</BlackTitle>
           <BlackText>{props.images[0].text}</BlackText>
           <IconWrapper>
           <BlackInvite>{props.images[1].invite}</BlackInvite>
@@ -80,11 +81,11 @@ const minContent = [
         </TextContainer>
       </Container>
 
-      <Container style={{ backgroundColor: '#ffffff' }} ordering='row-reverse'>
+      <Container style={{ backgroundColor: '#ffffff'}} ordering='row-reverse'>
         <ImgWrapper>
           <ImageDiv src={props.images[2].path} alt={props.images[2].alt} />
         </ImgWrapper>
-        <TextContainer>
+        <TextContainer ptop="92px" pbot="92px">
           <BlackTitle>{props.images[2].title}</BlackTitle>
           <BlackText>{props.images[2].text}</BlackText>
           <IconWrapper>
@@ -93,11 +94,11 @@ const minContent = [
           </IconWrapper>
         </TextContainer>
       </Container>
-          <div>
+      <ImagesWrapper>
       {minContent.map((item) => (
         <Image bg={item.bg} dateTxt={item.date} title={item.title} creator={item.creator} key={Math.random()}/>
       ))}
-    </div>
+      </ImagesWrapper>
     </>
   );
 }

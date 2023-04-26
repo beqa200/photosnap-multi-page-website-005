@@ -11,6 +11,7 @@ import {
   ImageDiv
 } from "../styled-components/PhotoStoryStyled";
 import Image from '../components/Image'
+import { ImagesWrapper } from "../styled-components/ImagesWrapper.styled";
 
 
 
@@ -121,7 +122,7 @@ export default function Stories(props) {
           <ImageDiv src={props.images[3].path} alt={props.images[3].alt } className="noneDiv"/>
         </ImgWrapper>
 
-        <TextContainer bgColor="black" transparentColor='transparent'>
+        <TextContainer bgColor="black" transparentColor='transparent' ptop="48px" pbot="48px">
           <Title>{props.images[3].title}</Title>
           <Text>{props.images[3].text}</Text>
           <IconWrapper>
@@ -130,11 +131,11 @@ export default function Stories(props) {
           </IconWrapper>
         </TextContainer>
       </Container>
-          <div>
+      <ImagesWrapper>
       {content.map((item) => (
         <Image bg={item.bg} dateTxt={item.date} title={item.title} creator={item.creator} key={Math.random()}/>
       ))}
-    </div>
+      </ImagesWrapper>
     </>
   );
 

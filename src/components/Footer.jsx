@@ -3,9 +3,9 @@ import {
   LogoTitle2,
   BlockDiv,
   IconsDiv,
-  Icon,
+  IconArrow,
   LinkTitleFooter,
-  Invite,
+  InviteDiv,
   InviteText,
   FooterText,
 } from "../styled-components/Footer.styled";
@@ -39,7 +39,7 @@ export default function Footer() {
       </BlockDiv>
       <IconsDiv>
         {iconsArr.map((icon) => (
-          <Icon src={icon} key={Math.random()} />
+          <IconArrow src={icon} key={Math.random()} />
         ))}
       </IconsDiv>
       {footerLinks.map((item) => (
@@ -47,10 +47,10 @@ export default function Footer() {
           <LinkTitleFooter>{item.name}</LinkTitleFooter>
         </StyledLink>
       ))}
-      <Invite>
+      <InviteDiv>
         <InviteText>GET AN INVITE</InviteText>
-        <Icon src="./assets/shared/desktop/arrow.svg" alt="arrow" />
-      </Invite>
+        <IconArrow src="./assets/shared/desktop/arrow.svg" alt="arrow" />
+      </InviteDiv>
       <FooterText>Copyright 2019. All Rights Reserved</FooterText>
     </StyledFooter>
   );

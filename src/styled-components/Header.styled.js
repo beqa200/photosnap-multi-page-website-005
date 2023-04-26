@@ -25,6 +25,7 @@ export const Menu = styled.nav`
     left: 0px;
     padding: 12px 32px 32px;
     z-index: 99;
+    background-color: white;
 `
 
 export const LinkTitle = styled.h1`
@@ -43,6 +44,7 @@ export const Hr = styled.hr`
     border: none;
     background-color: #000000;
     margin-top: 20px;
+    opacity: 0.25;
 `
 
 export const StyledLink = styled(Link)`

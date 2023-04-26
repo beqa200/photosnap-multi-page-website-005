@@ -26,7 +26,7 @@ export const IconsDiv = styled.div`
     padding-bottom: 31.97px;
 `
 
-export const Icon = styled.img`
+export const IconArrow = styled.img`
     filter: invert(91%) sepia(97%) saturate(0%) hue-rotate(54deg) brightness(300%) contrast(150%);
 `
 export const LinkTitleFooter = styled.p`
@@ -39,12 +39,13 @@ export const LinkTitleFooter = styled.p`
     margin-top: 19px;
 `
 
-export const Invite = styled.div`
+export const InviteDiv = styled.div`
     margin: 119px auto 0px;
     width: 175px;
     display: flex;
     gap: 22px;
-    align-items: center;
+    justify-content: space-between;
+    /* align-items: center; */
 `
 
 export const InviteText = styled(LinkTitleFooter)`
