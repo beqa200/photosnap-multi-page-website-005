@@ -64,3 +64,14 @@ export const StyledButton = styled.button`
     display: block;
     margin: 20px auto 0px;
 `
+
+export const DarkDiv = styled.div`
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 72px;
+    left: 0px;
+    z-index: 98;
+    background-color: black;
+    opacity: .5;
+`

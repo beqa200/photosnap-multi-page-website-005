@@ -8,6 +8,7 @@ import {
   Hr,
   StyledLink,
   StyledButton,
+  DarkDiv,
 } from "../styled-components/Header.styled";
 import { Link } from "react-router-dom";
 
@@ -26,9 +27,7 @@ export const links = [
   },
 ];
 
-export default function Header() {
-  const [isMenuVisible, setIsMenuVisible] = useState(false);
-
+export default function Header({ isMenuVisible, setIsMenuVisible }) {
   return (
     <StyledHeader>
       <LogoTitle>
@@ -44,13 +43,18 @@ export default function Header() {
         <>
           <Menu>
             {links.map((item) => (
-              <StyledLink to={item.link} key={Math.random()}>
+              <StyledLink
+                to={item.link}
+                key={Math.random()}
+                onClick={() => setIsMenuVisible(!isMenuVisible)}
+              >
                 <LinkTitle>{item.name}</LinkTitle>
               </StyledLink>
             ))}
             <Hr />
             <StyledButton>GET AN INVITE</StyledButton>
           </Menu>
+          <DarkDiv />
         </>
       ) : null}
     </StyledHeader>

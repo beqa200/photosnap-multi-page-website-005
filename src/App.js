@@ -7,6 +7,7 @@ import React from "react";
 import Header from "./components/Header";
 import { GLobalStyled } from "./styled-components/Global.styled";
 import Footer from "./components/Footer";
+import { useState } from "react";
 
 
 
@@ -99,10 +100,12 @@ function App() {
     },
   ];
 
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
+
   return (
     <>
-      <GLobalStyled />
-      <Header />
+      <GLobalStyled height={isMenuVisible ? "100vh" : "100%"} over={isMenuVisible ? "hidden" : "auto"}/>
+      <Header isMenuVisible={isMenuVisible} setIsMenuVisible={setIsMenuVisible}/>
 
       <Routes>
         <Route path="/" element={<Home images={images} />} />
