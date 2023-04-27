@@ -12,11 +12,13 @@ import {
   BlackInvite,
   Stick,
   ImgWrapper,
-  ImageDiv
+  ImageDiv,IconP,IconTitle,IconContainer
 } from "../styled-components/PhotoStoryStyled";
 import styled from 'styled-components';
 import Image from '../components/Image';
 import { ImagesWrapper } from "../styled-components/ImagesWrapper.styled";
+import IconBox from '../components/IconBox';
+
 
 
 
@@ -99,6 +101,8 @@ const minContent = [
         <Image bg={item.bg} dateTxt={item.date} title={item.title} creator={item.creator} key={Math.random()}/>
       ))}
       </ImagesWrapper>
+      <IconBox/>
+     
     </>
   );
 }

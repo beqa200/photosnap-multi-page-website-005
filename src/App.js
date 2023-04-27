@@ -67,6 +67,7 @@ function App() {
     },
   ];
 
+
   const icons = [
     {
       icon: "",
@@ -102,6 +103,7 @@ function App() {
 
   const [isMenuVisible, setIsMenuVisible] = useState(false);
 
+
   return (
     <>
       <GLobalStyled height={isMenuVisible ? "100vh" : "100%"} over={isMenuVisible ? "hidden" : "auto"}/>
@@ -110,7 +112,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home images={images} />} />
         <Route path="/stories" element={<Stories images={images} />} />
-        <Route path="/features" element={<Features images={images} />} />
+        <Route path="/features" element={<Features images={images}/>} />
         <Route path="/pricing" element={<Pricing images={images} />} />
       </Routes>
       <Footer />

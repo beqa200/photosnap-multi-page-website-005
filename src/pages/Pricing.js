@@ -9,7 +9,8 @@ import {
   ImageDiv, 
   Stick
 } from "../styled-components/PhotoStoryStyled";
-import Beta from '../components/Beta'
+import Beta from '../components/Beta';
+import Price from '../components/Price';
 
 
 export default function Pricing(props) {
@@ -26,6 +27,7 @@ export default function Pricing(props) {
           <Text>{props.images[5].text}</Text>
         </TextContainer>
       </Container>
+      <Price />
        <Beta />
     </>
   )
