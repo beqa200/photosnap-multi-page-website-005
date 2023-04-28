@@ -9,7 +9,7 @@ import {
   ImageDiv,
   Stick
 } from "../styled-components/PhotoStoryStyled";
-import{IconDiv , IconTitle,IconP,IconContainer,IconsMainContainer} from '../styled-components/IconBoxStyled'
+import{IconDiv , IconTitle,IconP,IconContainer,IconsMainContainer} from '../styled-components/IconBoxStyled';
 
 import Beta from "../components/Beta";
 
