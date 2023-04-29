@@ -49,7 +49,7 @@ export default function Features(props) {
   ];
 
   return (
-    <IconsMainContainer>
+    <>
       <Container style={{ backgroundColor: "#000000" }}>
         <ImgWrapper>
           <ImageDiv src={props.images[4].path} alt={props.images[4].alt} />
@@ -62,7 +62,7 @@ export default function Features(props) {
         </TextContainer>
       </Container>
       <Beta />
-      <div>
+      <IconsMainContainer>
         {icons.map((item) => {
           return (
             <IconContainer>
@@ -74,7 +74,7 @@ export default function Features(props) {
             </IconContainer>
           );
         })}
-      </div>
-    </IconsMainContainer>
+      </IconsMainContainer>
+    </>
   );
 }
