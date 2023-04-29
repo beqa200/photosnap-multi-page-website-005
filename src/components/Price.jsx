@@ -13,6 +13,7 @@ import {
   OfferDur,
   ColorDiv,
   Butt,
+  ButtTablet,
 } from "../styled-components/Price.styled";
 
 const offer = [
@@ -61,20 +62,30 @@ export default function Price() {
             pb={index === 1 ? "48px" : "40px"}
           >
             {index === 1 ? <ColorDiv /> : null}
-            <Offertitle cl={index === 1 ? "#FFFFFF" : "#000000"}>
-              {item.title}
-            </Offertitle>
-            <OfferCond cltxt={index === 1 ? "#FFFFFF" : "#000000"}>
-              {item.off}
-            </OfferCond>
-            <OfferPrice clpr={index === 1 ? "#FFFFFF" : "#000000"}>
-              {index === 0 ? (isChecked ? "$190.00" : "$19.00") : null}
-              {index === 1 ? (isChecked ? "$390.00" : "$39.00") : null}
-              {index === 2 ? (isChecked ? "$990.00" : "$99.00") : null}
-            </OfferPrice>
-            <OfferDur clDur={index === 1 ? "#FFFFFF" : "#000000"}>
-              {isChecked ? "per year" : "per month"}
-            </OfferDur>
+            <div>
+              <Offertitle cl={index === 1 ? "#FFFFFF" : "#000000"}>
+                {item.title}
+              </Offertitle>
+              <OfferCond cltxt={index === 1 ? "#FFFFFF" : "#000000"}>
+                {item.off}
+              </OfferCond>
+              <ButtTablet
+                bgButt={index === 1 ? "#FFFFFF" : "#000000"}
+                clButt={index === 1 ? "#000000" : "#FFFFFF"}
+              >
+                {item.butTxt}
+              </ButtTablet>
+            </div>
+            <div>
+              <OfferPrice clpr={index === 1 ? "#FFFFFF" : "#000000"}>
+                {index === 0 ? (isChecked ? "$190.00" : "$19.00") : null}
+                {index === 1 ? (isChecked ? "$390.00" : "$39.00") : null}
+                {index === 2 ? (isChecked ? "$990.00" : "$99.00") : null}
+              </OfferPrice>
+              <OfferDur clDur={index === 1 ? "#FFFFFF" : "#000000"}>
+                {isChecked ? "per year" : "per month"}
+              </OfferDur>
+            </div>
             <Butt
               bgButt={index === 1 ? "#FFFFFF" : "#000000"}
               clButt={index === 1 ? "#000000" : "#FFFFFF"}
