@@ -9,6 +9,9 @@ import {
   StyledLink,
   StyledButton,
   DarkDiv,
+  MenuInHeader,
+  HeaderLink,
+  StyledButtHeader,
 } from "../styled-components/Header.styled";
 import { Link } from "react-router-dom";
 
@@ -34,6 +37,14 @@ export default function Header({ isMenuVisible, setIsMenuVisible }) {
         <img src="./assets/logo.png" />
         <img src="./assets/PHOTOSNAP.png" />
       </LogoTitle>
+      <MenuInHeader>
+        {links.map((item) => (
+          <StyledLink to={item.link} key={Math.random()}>
+            <HeaderLink>{item.name}</HeaderLink>
+          </StyledLink>
+        ))}
+      </MenuInHeader>
+      <StyledButtHeader>GET AN INVITE</StyledButtHeader>
       <MenuIcon
         src={isMenuVisible ? "./assets/xIcon.png" : "./assets/menuIcon.jpg"}
         height={isMenuVisible ? "14.85px" : "6px"}
