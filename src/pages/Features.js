@@ -65,7 +65,7 @@ export default function Features(props) {
       <IconsMainContainer>
         {icons.map((item) => {
           return (
-            <IconContainer>
+            <IconContainer flex ='1 1 339px' width='450px'>
               <IconDiv>
                 <img src={item.icon} alt={item.alt} />
               </IconDiv>

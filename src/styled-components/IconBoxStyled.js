@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const IconMainContainer=styled.div`
+const IconMainContainer = styled.div`
 
 margin-top:80px;
 margin-bottom:80px;
@@ -8,7 +8,6 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
-// margin:0 auto;
 @media screen and (min-width: 768px){
     margin-top:120px;
     margin-bottom:120px;
@@ -26,33 +25,32 @@ align-items:center;
     margin-top:120px;
 }
 `;
-const IconsMainContainer=styled.div`
-// margin-top:64px;
-// margin-bottom:91px;
-width:100%;
-display:flex;
-padding-top:24px;
-padding-bottom:24px;
-@media screen and (min-width: 768px){
-    margin-top:120px;
-    margin-bottom:120px;
-    display:flex;
+const IconsMainContainer = styled.div`
+  display: flex;
+  justify-content:space-around;
+  align-items:center;
+  flex-direction:column;
+  margin-top: 64px;
+  margin-bottom: 91px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 112px;
+    margin:112px auto;
+    flex-direction:row;
     flex-wrap:wrap;
-    display:flex;
-    justify-content:space-around;
-    text-align:center;
-    max-width:1300px;
-    margin: auto;
-
-    
-}
-@media screen and (min-width: 1440px){
-    
-   
-}
+    width:691px;
+    &:nth-child(2) {
+        margin-right:13px;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    width:1110px;
+    height:576px;
+    margin-top: 160px;
+    margin-bottom: 160px;
+  }
 `;
 
-const IconContainer=styled.div`
+const IconContainer = styled.div`
 width:350px;
 height:240px;
 margin-top:56px:
@@ -66,98 +64,90 @@ position:relative;
 &:first-child {
     margin-bottom:56px;
 }
-&:last-child {
+&:nth-child(3) {
+    margin-bottom:56px;
+}
+&:nth-child(4) {
+    margin-bottom:56px;
+}
+&:nth-child(5) {
+    margin-bottom:56px;
+}
+&:nth-child(6) {
     margin-bottom:56px;
 }
 &:nth-child(2) {
     margin-bottom:56px;
 }
 }
-`;
-
-const IconDiv=styled.div`
-width:71.85px;
-position:absolute;
-top:0;
-// height:71.85px;
-color:#000000;
-// align-items:center;
-margin:0 auto;
-// margin-bottom:48.15px;
-// margin:56px 159px 48.15px 144px;
-@media (min-width: 768px){
-    margin:0 auto;
-    // margin-bottom:48.15px;
-    // margin-top:56.02px;
-    // position:absolute;
-    // top:0;
-}
-@media screen and (min-width: 1440px){
-    // margin:0 auto;  
-
+@media(min-width:768px){
+    flex:${({flex})=>flex};
+    max-width:${({width})=>width};
+    height:${({height}) =>height};
 }
 `;
-const IconTitle=styled.h2`
-width:310px;
-height:25px;
-// padding-right:32px;
-// padding-bottom:16px;
-// padding-left:33px;
-font-weight:700px;
-font-size:18px;
-line-height:25px;
-text-align:center;
-font-color:#000000;
-font-family: 'DM Sans', sans-serif;
-margin:0 auto;
-position:absolute;
-top:120px;
-@media screen and (min-width: 768px){
-    width:457px;
-    margin:0 auto;
-    position:absolute;
-    top:120px;
-}
-@media screen and (min-width: 1440px){
-    width:350px; 
-    height:25px;
-    // margin:0 auto;
-    // text-align: center;
-    // margin-bottom:16px;
-    // margin-top:48.15px;
-}
 
+const IconDiv = styled.div`
+  width: 71.85px;
+  position: absolute;
+  top: 0;
+  color: #000000;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    margin: 0 auto;
+  }
+`;
+const IconTitle = styled.h2`
+  width: 310px;
+  height: 25px;
+  font-weight: 700px;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  font-color: #000000;
+  font-family: "DM Sans", sans-serif;
+  margin: 0 auto;
+  position: absolute;
+  top: 120px;
+  @media screen and (min-width: 768px) {
+    width: 457px;
+    margin: 0 auto;
+    position: absolute;
+    top: 120px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 350px;
+    height: 25px;
+  }
 `;
 const IconP = styled.p`
-width:310px;
-height:75px;
-position:absolute;
-top:161px;
-margin:0 auto;
-margin-bottom:56.02px;
-// margin-top:16px;
-font-weight:400px;
-font-size:15px;
-line-height:25px;
-text-align:center;
-font-family: 'DM Sans', sans-serif;
-color:#000000;
-opacity:60%;
-@media screen and (min-width: 768px){
-    width:457px;
-    height:50px;
-    margin-bottom:80px;
-    margin:0 auto;
-    position:absolute;
-    top:161px;
-}
-@media screen and (min-width: 1440px){
-    width:350px; 
-    height:75px;
-    // margin:0;
-    // text-align:center;
-    // margin-left:165px;
-    // margin-right:30px;
-}
+  width: 310px;
+  height: 75px;
+  position: absolute;
+  top: 161px;
+  font-weight: 400px;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  color: #000000;
+  opacity: 60%;
+  @media screen and (min-width: 768px) {
+    width: 340px;
+    height: 50px;
+    position: absolute;
+    top: 161px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 350px;
+    height: 75px;
+  }
 `;
-export{IconDiv , IconTitle,IconP,IconContainer,IconMainContainer,IconsMainContainer};
+export {
+  IconDiv,
+  IconTitle,
+  IconP,
+  IconContainer,
+  IconMainContainer,
+  IconsMainContainer,
+};
