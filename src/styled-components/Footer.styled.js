@@ -7,6 +7,12 @@ export const StyledFooter = styled.footer`
     padding: 56px 0px;
     margin: auto;
     background-color: #000000;
+
+    @media(min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        padding: 64px 5.07%;
+    }
 `
 
 export const LogoTitle2 = styled(LogoTitle)``
@@ -16,6 +22,10 @@ export const BlockDiv = styled.div`
     display: block;
     margin: auto;
     width: 169px;
+
+    @media(min-width: 768px) {
+        margin: 0px;
+    }
 `
 
 export const IconsDiv = styled.div`
@@ -24,6 +34,10 @@ export const IconsDiv = styled.div`
     gap: 13.33px;
     margin: 32px auto 0px;
     padding-bottom: 31.97px;
+
+    @media(min-width: 768px) {
+        margin: 120px 0px 0px 0px;
+    }
 `
 
 export const IconArrow = styled.img`
@@ -45,7 +59,12 @@ export const InviteDiv = styled.div`
     display: flex;
     gap: 22px;
     justify-content: space-between;
-    /* align-items: center; */
+
+    @media(min-width: 768px) {
+        margin: 0px 0px 0px auto;
+    }
+
+
 `
 
 export const InviteText = styled(LinkTitleFooter)`
@@ -61,4 +80,17 @@ export const FooterText = styled.p`
     line-height: 19.53px;
     color: white;
     opacity: 0.5;
+
+    @media(min-width: 768px) {
+        margin-top: 120px;
+    }
+`
+
+export const LinksDiv = styled.div`
+
+    @media(min-width: 768px) {
+        display: flex;
+        gap: 26px;
+        margin-top: -160px;
+    }
 `
