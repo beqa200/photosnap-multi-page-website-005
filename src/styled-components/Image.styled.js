@@ -69,4 +69,5 @@ export const ContentDiv = styled.div`
     left: 41.67px;
     position: absolute;
     z-index: 2;
+
 `
