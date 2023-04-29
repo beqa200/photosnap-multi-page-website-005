@@ -100,7 +100,10 @@ export const MenuInHeader = styled.div`
     
 `
 export const HeaderLink = styled.p`
+    display: none;
+
     @media(min-width: 768px) {
+        display: block;
         font-weight: 700;
         font-size: 12px;
         line-height: 15.62px;
@@ -111,7 +114,10 @@ export const HeaderLink = styled.p`
 `
 
 export const StyledButtHeader = styled(StyledButton)`
+    display: none;
+
     @media(min-width: 768px) {
+        display: block;
         width: 158px;
         height: 40px;
         border: none;
