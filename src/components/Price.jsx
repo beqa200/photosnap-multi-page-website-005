@@ -14,6 +14,7 @@ import {
   ColorDiv,
   Butt,
   ButtTablet,
+  Flexing,
 } from "../styled-components/Price.styled";
 
 const offer = [
@@ -53,48 +54,52 @@ export default function Price() {
         </Switch>
         <Year op={isChecked ? "1" : ".5"}>Yearly</Year>
       </Period>
-      {offer.map((item, index) => {
-        return (
-          <OfferDiv
-            key={Math.random()}
-            bgColor={index === 1 ? "#000000" : "#F5F5F5"}
-            pt={index === 1 ? "48px" : "56px"}
-            pb={index === 1 ? "48px" : "40px"}
-          >
-            {index === 1 ? <ColorDiv /> : null}
-            <div>
-              <Offertitle cl={index === 1 ? "#FFFFFF" : "#000000"}>
-                {item.title}
-              </Offertitle>
-              <OfferCond cltxt={index === 1 ? "#FFFFFF" : "#000000"}>
-                {item.off}
-              </OfferCond>
-              <ButtTablet
+      <Flexing>
+        {offer.map((item, index) => {
+          return (
+            <OfferDiv
+              key={Math.random()}
+              bgColor={index === 1 ? "#000000" : "#F5F5F5"}
+              pt={index === 1 ? "48px" : "56px"}
+              pb={index === 1 ? "48px" : "40px"}
+              ptDesk={index === 1 ? "88px" : "56px"}
+              pbDesk={index === 1 ? "71px" : "40px"}
+            >
+              {index === 1 ? <ColorDiv /> : null}
+              <div>
+                <Offertitle cl={index === 1 ? "#FFFFFF" : "#000000"}>
+                  {item.title}
+                </Offertitle>
+                <OfferCond cltxt={index === 1 ? "#FFFFFF" : "#000000"}>
+                  {item.off}
+                </OfferCond>
+                <ButtTablet
+                  bgButt={index === 1 ? "#FFFFFF" : "#000000"}
+                  clButt={index === 1 ? "#000000" : "#FFFFFF"}
+                >
+                  {item.butTxt}
+                </ButtTablet>
+              </div>
+              <div>
+                <OfferPrice clpr={index === 1 ? "#FFFFFF" : "#000000"}>
+                  {index === 0 ? (isChecked ? "$190.00" : "$19.00") : null}
+                  {index === 1 ? (isChecked ? "$390.00" : "$39.00") : null}
+                  {index === 2 ? (isChecked ? "$990.00" : "$99.00") : null}
+                </OfferPrice>
+                <OfferDur clDur={index === 1 ? "#FFFFFF" : "#000000"}>
+                  {isChecked ? "per year" : "per month"}
+                </OfferDur>
+              </div>
+              <Butt
                 bgButt={index === 1 ? "#FFFFFF" : "#000000"}
                 clButt={index === 1 ? "#000000" : "#FFFFFF"}
               >
                 {item.butTxt}
-              </ButtTablet>
-            </div>
-            <div>
-              <OfferPrice clpr={index === 1 ? "#FFFFFF" : "#000000"}>
-                {index === 0 ? (isChecked ? "$190.00" : "$19.00") : null}
-                {index === 1 ? (isChecked ? "$390.00" : "$39.00") : null}
-                {index === 2 ? (isChecked ? "$990.00" : "$99.00") : null}
-              </OfferPrice>
-              <OfferDur clDur={index === 1 ? "#FFFFFF" : "#000000"}>
-                {isChecked ? "per year" : "per month"}
-              </OfferDur>
-            </div>
-            <Butt
-              bgButt={index === 1 ? "#FFFFFF" : "#000000"}
-              clButt={index === 1 ? "#000000" : "#FFFFFF"}
-            >
-              {item.butTxt}
-            </Butt>
-          </OfferDiv>
-        );
-      })}
+              </Butt>
+            </OfferDiv>
+          );
+        })}
+      </Flexing>
     </PriceMain>
   );
 }

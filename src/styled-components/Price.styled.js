@@ -9,6 +9,11 @@ export const PriceMain = styled.div`
         width: 689px;
         padding: 112px 0px;
     }
+
+    @media(min-width: 1440px) {
+        width: 1110px;
+        padding: 120px 0px;
+    }
 `
 
 export const Period = styled.div`
@@ -19,7 +24,11 @@ export const Period = styled.div`
 
     @media(min-width: 768px) {
         margin: auto 186px;
-        
+    }
+
+    @media(min-width: 1440px) {
+        margin: auto 387px;
+        padding: 0px 32px 24px;
     }
 `
 
@@ -47,6 +56,10 @@ export const Switch = styled.div`
     padding: 4px;
     display: flex;
 
+    @media(min-width: 1440px) {
+        cursor: pointer;
+    }
+
 `
 
 export const Circle = styled.div`
@@ -71,6 +84,12 @@ export const OfferDiv = styled.div`
         gap: 100px;
         padding: 40px;
     }
+
+    @media(min-width: 1440px) {
+        width: 350px;
+        display: block;
+        padding: ${({ptDesk}) => ptDesk} 21.5px ${({pbDesk}) => pbDesk};
+    }
 `
 
 export const Offertitle = styled.h1`
@@ -83,6 +102,10 @@ export const Offertitle = styled.h1`
 
     @media(min-width: 768px) {
         text-align: start;
+    }
+
+    @media(min-width: 1440px) {
+        text-align: center;
     }
 `
 
@@ -99,6 +122,10 @@ export const OfferCond = styled.p`
         text-align: start;
     }
 
+    @media(min-width: 1440px) {
+        text-align: center;
+    }
+
 `
 
 export const OfferPrice = styled.p`
@@ -112,6 +139,10 @@ export const OfferPrice = styled.p`
 
     @media(min-width: 768px) {
         margin: 0px 8px 0px 0px;
+    }
+
+    @media(min-width: 1440px) {
+        margin: 40px 0px 0px;
     }
 `
 
@@ -128,6 +159,11 @@ export const OfferDur = styled.p`
         text-align: right;
         margin-right: 16px;
     }
+
+    @media(min-width: 1440px) {
+        text-align: center;
+        margin: 0px;
+    }
 `
 
 export const ColorDiv = styled.div`
@@ -141,6 +177,11 @@ export const ColorDiv = styled.div`
     @media(min-width: 768px) {
         width: 6px;
         height: 100%;
+    }
+
+    @media(min-width: 1440px) {
+        width: 100%;
+        height: 6px;
     }
 `
 
@@ -160,6 +201,16 @@ export const Butt = styled.button`
     @media(min-width: 768px) {
         display: none;
     }
+
+    @media(min-width: 1440px) {
+        display: block;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #DFDFDF;
+            color: black;
+        }
+    }
 `
 
 export const ButtTablet = styled(Butt)`
@@ -169,5 +220,18 @@ export const ButtTablet = styled(Butt)`
         width: 270px;
         display: block;
         margin: 32px 0px 0px;
+    }
+
+    @media(min-width: 1440px) {
+        display: none;
+    }
+`
+
+export const Flexing = styled.div`
+
+    @media(min-width: 1440px) {
+        display: flex;
+        align-items: center;
+        gap: 30px;
     }
 `
