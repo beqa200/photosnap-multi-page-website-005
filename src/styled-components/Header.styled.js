@@ -11,6 +11,10 @@ export const StyledHeader = styled.header`
     @media(min-width: 768px){
         padding: 16px 39.5px;
     }
+
+    @media(min-width: 1440px){
+        padding: 16px 165px;
+    }
 `
 
 export const LogoTitle = styled.div`
@@ -110,6 +114,12 @@ export const HeaderLink = styled.p`
         letter-spacing: 2px;
         color: #000000;
     }
+
+    @media(min-width: 1440px) {
+        &:hover {
+            opacity: .3;
+        }
+    }
     
 `
 
@@ -128,5 +138,14 @@ export const StyledButtHeader = styled(StyledButton)`
         line-height: 15.62px;
         letter-spacing: 2px;
         margin: 0px 0px 0px 12px;
+    }
+
+    @media(min-width: 1440px) {
+        cursor: pointer;
+        
+        &:hover {
+            background-color: #DFDFDF;
+            color: #000000;
+        }
     }
 `
