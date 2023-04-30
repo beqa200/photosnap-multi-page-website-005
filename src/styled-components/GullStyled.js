@@ -1,6 +1,6 @@
 import styled from "styled-components";
 const GullMainContainer = styled.div`
-  width: 318px;
+  width: 330px;
   padding: 64px 75px 64px 29px;
   margin: 0 auto;
   @media (min-width: 768px) {
@@ -84,7 +84,7 @@ const TitleWrapper = styled.div`
   height: 16px;
   margin-bottom: 16px;
   @media (min-width: 768px) {
-    margin-right: 104px;
+    margin-right: 90px;
     width: 233px;
   }
 `;
@@ -112,7 +112,7 @@ const Menu = styled.div`
   font-weight: 700;
   font-size: 10px;
   line-height: 13.02px;
-  text-align: center;
+  // text-align: center;
   font-family: "DM Sans";
   letter-spacing: 1.67px;
   font-color: #000000;
@@ -141,6 +141,7 @@ const CheckSign = styled.div`
 const TabletContainer = styled.div`
   @media (min-width: 768px) {
     display: flex;
+    justify-content:space-between;
   }
 `;
 const TabletMenuWrapper = styled.div`
@@ -149,13 +150,13 @@ const TabletMenuWrapper = styled.div`
   @media (min-width: 768px) {
     display: block;
     display:flex;
-    margin-left:270px;
+    margin-left:320px;
     align-items:center;
     margin-bottom:16px;
   }
 `;
 const TabletMenuContainer = styled.div`
-  display: flex;
+  // display: flex;
   flex-direction:column;
   width: 318px;
   margin: 0 auto;
