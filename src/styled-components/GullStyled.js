@@ -3,11 +3,6 @@ const GullMainContainer = styled.div`
   width: 318px;
   padding: 64px 75px 64px 29px;
   margin: 0 auto;
-  // display:flex;
-  // flex-direction:column;
-  // justify-content:space-between;
-  // align-items:center;
-
   @media (min-width: 768px) {
     width: 689px;
     padding: 64px 40px 112px 39px;
@@ -15,7 +10,6 @@ const GullMainContainer = styled.div`
   @media (min-width: 1440px) {
     width: 731px;
     margin-bottom:160px;
-    
   }
 `;
 const CompareTitle=styled.h1`
@@ -37,11 +31,7 @@ const CompareTitle=styled.h1`
     width:540px;
     margin-top:160px;
   }
-
-
 }
-
-
 `;
 const GullMainTitle = styled.h2`
   width: 140px;
@@ -95,9 +85,7 @@ const TitleWrapper = styled.div`
   margin-bottom: 16px;
   @media (min-width: 768px) {
     margin-right: 104px;
-    // margin-left:63px;
     width: 233px;
-    // text-align:center
   }
 `;
 const GullTitle = styled.h3`
@@ -127,15 +115,10 @@ const Menu = styled.div`
   text-align: center;
   font-family: "DM Sans";
   letter-spacing: 1.67px;
-  //   margin-right:16px;
   font-color: #000000;
   mix-blend-mode: normal;
   opacity: 0.5;
-  //   @media(min-width:768px){
-  //     display:none;
   width:140px;
-
-  // }
 `;
 const CheckWrapper = styled.div`
   display: flex;
@@ -146,8 +129,7 @@ const CheckWrapper = styled.div`
   @media (min-width: 768px) {
     width: 423px;
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center;  
   }
 `;
 const CheckSign = styled.div`
@@ -157,12 +139,8 @@ const CheckSign = styled.div`
   color: black;
 `;
 const TabletContainer = styled.div`
-  // display:flex;
-  // flex-direction:row;
-  // justify-content:space-between;
   @media (min-width: 768px) {
     display: flex;
-    // flex-direction:column;
   }
 `;
 const TabletMenuWrapper = styled.div`
@@ -172,22 +150,16 @@ const TabletMenuWrapper = styled.div`
     display: block;
     display:flex;
     margin-left:270px;
-    // justify-content:space-between;
     align-items:center;
     margin-bottom:16px;
-    
-
   }
 `;
 const TabletMenuContainer = styled.div`
   display: flex;
   flex-direction:column;
   width: 318px;
-  // padding: 64px 75px 64px 29px;
   margin: 0 auto;
-//    
   align-items: center;
-  
   }
   @media(min-width:768px){
     width:689px;
