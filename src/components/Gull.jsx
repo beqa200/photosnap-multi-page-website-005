@@ -9,10 +9,11 @@ import {
   TitleWrapper,
   GullTitle,
   Line,
+  BlackLine,
   GullMainTitle,
   TabletContainer,
   TabletMenuWrapper,
-  TabletMenuContainer
+  TabletMenuContainer,CompareTitle
 } from "../styled-components/GullStyled";
 
 export default function Gull(props) {
@@ -98,8 +99,10 @@ export default function Gull(props) {
   return (
     <div>
       <GullMainContainer>
+        <CompareTitle>COMPARE</CompareTitle>
        <TabletMenuContainer>
        <GullMainTitle>THE FEATURES</GullMainTitle>
+       <BlackLine></BlackLine>
         <TabletMenuWrapper>
           <Menu>BASIC</Menu>
           <Menu>PRO</Menu>
@@ -110,7 +113,7 @@ export default function Gull(props) {
         {gullBox.map((item) => {
           return (
             <gullContainer>
-              <Line></Line>
+              {/* <BlackLine></BlackLine> */}
               <TabletContainer>
                 <TitleWrapper>
                   <GullTitle>{item.title}</GullTitle>
@@ -131,7 +134,9 @@ export default function Gull(props) {
                     <img src={item.gullIcon} />
                   </CheckSign>
                 </CheckWrapper>
+                
               </TabletContainer>
+              <Line></Line>
             </gullContainer>
           );
         })}

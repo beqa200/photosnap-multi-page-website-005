@@ -12,6 +12,36 @@ const GullMainContainer = styled.div`
     width: 689px;
     padding: 64px 40px 112px 39px;
   }
+  @media (min-width: 1440px) {
+    width: 731px;
+    margin-bottom:160px;
+    
+  }
+`;
+const CompareTitle=styled.h1`
+     display:none;
+@media (min-width: 768px){
+  display:blocK;
+  width:689px;
+  height:48px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  font-family: "DM Sans";
+  letter-spacing: 4.17px;
+  font-color: #000000;
+  text-align:center;
+  margin:0 auto;
+  margin-bottom:64px;
+  @media (min-width: 1440px){
+    width:540px;
+    margin-top:160px;
+  }
+
+
+}
+
+
 `;
 const GullMainTitle = styled.h2`
   width: 140px;
@@ -23,6 +53,14 @@ const GullMainTitle = styled.h2`
   font-family: "DM Sans";
   letter-spacing: 2px;
   margin-bottom: 23px;
+  @media (min-width: 768px) {
+    width: 140px;
+    height:16px;
+  }
+  @media (min-width: 1440px){
+    width:731px;
+    margin-inline-end: auto;
+  }
 `;
 
 const GullContainer = styled.div``;
@@ -33,6 +71,22 @@ const Line = styled.div`
   margin-bottom: 23px;
   @media (min-width: 768px) {
     width: 689px;
+  }
+  @media (min-width: 1440px) {
+    width: 731px;
+  }
+`;
+
+const BlackLine = styled.div`
+  width: 318px;
+  height: 1px;
+  background-color: #000000;
+  margin-bottom: 23px;
+  @media (min-width: 768px) {
+    width: 689px;
+  }
+  @media (min-width: 1440px) {
+    width: 731px;
   }
 `;
 const TitleWrapper = styled.div`
@@ -93,6 +147,7 @@ const CheckWrapper = styled.div`
     width: 423px;
     justify-content: space-between;
     align-items: center;
+    
   }
 `;
 const CheckSign = styled.div`
@@ -107,6 +162,7 @@ const TabletContainer = styled.div`
   // justify-content:space-between;
   @media (min-width: 768px) {
     display: flex;
+    // flex-direction:column;
   }
 `;
 const TabletMenuWrapper = styled.div`
@@ -115,7 +171,8 @@ const TabletMenuWrapper = styled.div`
   @media (min-width: 768px) {
     display: block;
     display:flex;
-    justify-content:space-between;
+    margin-left:270px;
+    // justify-content:space-between;
     align-items:center;
     margin-bottom:16px;
     
@@ -124,10 +181,19 @@ const TabletMenuWrapper = styled.div`
 `;
 const TabletMenuContainer = styled.div`
   display: flex;
-//   justify-content: space-between;
+  flex-direction:column;
+  width: 318px;
+  // padding: 64px 75px 64px 29px;
+  margin: 0 auto;
+//    
   align-items: center;
   
   }
+  @media(min-width:768px){
+    width:689px;
+    flex-direction:column;
+  }
+
 `;
 
 export {
@@ -140,8 +206,9 @@ export {
   TitleWrapper,
   GullTitle,
   Line,
+  BlackLine,
   GullMainTitle,
   TabletContainer,
   TabletMenuContainer,
-  TabletMenuWrapper
+  TabletMenuWrapper,CompareTitle
 };
