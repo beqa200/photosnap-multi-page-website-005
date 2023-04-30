@@ -17,6 +17,19 @@ export const StyledDiv = styled.div`
         z-index: 1;
         filter: brightness(50%);
     }
+
+    @media(min-width: 768px) {
+        background-image: url(${({bgTablet}) => bgTablet});
+        background-size: 384px 500px;
+        height: 500px;
+
+        &::before {
+        width: 384px;
+        height: 100%;
+        z-index: 1;
+        filter: brightness(50%);
+    }
+    }
 `
 
 export const DateP = styled.p`
@@ -70,4 +83,16 @@ export const ContentDiv = styled.div`
     position: absolute;
     z-index: 2;
 
+
+    @media(min-width: 768px) {
+        top: 340px;
+    }
+
+`
+
+export const WrapDiv = styled.div`
+    @media(min-width: 768px) {
+        width: 384px;
+    }
+    
 `

@@ -4,13 +4,23 @@ export const PriceMain = styled.div`
     width: 375px;
     margin: auto;
     padding: 64px 28px;
+
+    @media(min-width: 768px) {
+        width: 689px;
+        padding: 112px 0px;
+    }
 `
 
 export const Period = styled.div`
     display: flex;
-    justify-content: space-between;
+    gap: 32px;
     align-items: center;
     padding: 0px 32px 16px;
+
+    @media(min-width: 768px) {
+        margin: auto 186px;
+        
+    }
 `
 
 export const Month = styled.h1`
@@ -54,6 +64,13 @@ export const OfferDiv = styled.div`
     background-color: ${({bgColor}) => bgColor};
     margin-top: 24px;
     position: relative;
+
+    @media(min-width: 768px) {
+        width: 689px;
+        display: flex;
+        gap: 100px;
+        padding: 40px;
+    }
 `
 
 export const Offertitle = styled.h1`
@@ -63,6 +80,10 @@ export const Offertitle = styled.h1`
     text-align: center;
     color: ${({cl}) => cl};
     margin-top: ${({marTop}) => marTop};
+
+    @media(min-width: 768px) {
+        text-align: start;
+    }
 `
 
 export const OfferCond = styled.p`
@@ -74,6 +95,10 @@ export const OfferCond = styled.p`
     color: ${({cltxt}) => cltxt};
     margin-top: 18px;
 
+    @media(min-width: 768px) {
+        text-align: start;
+    }
+
 `
 
 export const OfferPrice = styled.p`
@@ -84,6 +109,10 @@ export const OfferPrice = styled.p`
     text-align: center;
     color: ${({clpr}) => clpr};
     margin-top: 40px;
+
+    @media(min-width: 768px) {
+        margin: 0px 8px 0px 0px;
+    }
 `
 
 export const OfferDur = styled.p`
@@ -94,6 +123,11 @@ export const OfferDur = styled.p`
     opacity: 0.6;
     color: ${({clDur}) => clDur};
     margin-top: 0px;
+
+    @media(min-width: 768px) {
+        text-align: right;
+        margin-right: 16px;
+    }
 `
 
 export const ColorDiv = styled.div`
@@ -103,6 +137,11 @@ export const ColorDiv = styled.div`
     left: 0px;
     position: absolute;
     top: 0px;
+
+    @media(min-width: 768px) {
+        width: 6px;
+        height: 100%;
+    }
 `
 
 export const Butt = styled.button`
@@ -117,4 +156,18 @@ export const Butt = styled.button`
     margin: 40px auto 0px;
     border: none;
     display: block;
+
+    @media(min-width: 768px) {
+        display: none;
+    }
+`
+
+export const ButtTablet = styled(Butt)`
+    display: none;
+
+    @media(min-width: 768px) {
+        width: 270px;
+        display: block;
+        margin: 32px 0px 0px;
+    }
 `

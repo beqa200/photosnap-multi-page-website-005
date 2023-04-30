@@ -7,6 +7,10 @@ export const StyledHeader = styled.header`
     justify-content: space-between;
     align-items: center;
     padding: 28px 24px;
+
+    @media(min-width: 768px){
+        padding: 16px 39.5px;
+    }
 `
 
 export const LogoTitle = styled.div`
@@ -16,6 +20,10 @@ export const LogoTitle = styled.div`
 
 export const MenuIcon = styled.img`
     height: ${({height}) => height};
+
+    @media(min-width: 768px){
+        display: none;
+    }
 `
 
 export const Menu = styled.nav`
@@ -26,6 +34,10 @@ export const Menu = styled.nav`
     padding: 12px 32px 32px;
     z-index: 99;
     background-color: white;
+
+    @media(min-width: 768px){
+        display: none;
+    }
 `
 
 export const LinkTitle = styled.h1`
@@ -74,4 +86,47 @@ export const DarkDiv = styled.div`
     z-index: 98;
     background-color: black;
     opacity: .5;
+
+    @media(min-width: 768px){
+        display: none;
+    }
+`
+
+export const MenuInHeader = styled.div`
+    @media(min-width: 768px) {
+        display: flex;
+        gap: 37px;
+    }
+    
+`
+export const HeaderLink = styled.p`
+    display: none;
+
+    @media(min-width: 768px) {
+        display: block;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15.62px;
+        letter-spacing: 2px;
+        color: #000000;
+    }
+    
+`
+
+export const StyledButtHeader = styled(StyledButton)`
+    display: none;
+
+    @media(min-width: 768px) {
+        display: block;
+        width: 158px;
+        height: 40px;
+        border: none;
+        background-color: #000000;
+        color: white;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15.62px;
+        letter-spacing: 2px;
+        margin: 0px 0px 0px 12px;
+    }
 `
