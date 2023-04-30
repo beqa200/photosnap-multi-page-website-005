@@ -9,6 +9,7 @@ import {
   Read,
   Arrow,
   WrapDiv,
+  ImageBot,
 } from "../styled-components/Image.styled";
 
 export default function Image({ bg, dateTxt, title, creator, bgTablet }) {
@@ -25,6 +26,7 @@ export default function Image({ bg, dateTxt, title, creator, bgTablet }) {
             <Arrow src="./assets/shared/desktop/arrow.svg" />
           </ReadDiv>
         </ContentDiv>
+        <ImageBot />
       </StyledDiv>
     </WrapDiv>
   );

@@ -1,5 +1,16 @@
 import styled from "styled-components";
 
+export const ImageBot = styled.div`
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+    z-index: 4;
+    display: none;
+`
+
 export const StyledDiv = styled.div`
     background-image: url(${({bg}) => bg});
     background-repeat: no-repeat;
@@ -30,6 +41,33 @@ export const StyledDiv = styled.div`
         filter: brightness(50%);
     }
     }
+
+    @media(min-width: 1440px) {
+        background-image: url(${({bgTablet}) => bgTablet});
+        background-size: 360px 500px;
+        height: 500px;
+        cursor: pointer;
+
+
+        &:hover {
+            top: -24px;
+            z-index: 3;
+        }
+
+        &:hover ${ImageBot} {
+            display: block;
+        }
+
+        &::before {
+        width: 360px;
+        height: 100%;
+        z-index: 1;
+        filter: brightness(50%);
+    }
+
+
+
+    }
 `
 
 export const DateP = styled.p`
@@ -56,16 +94,24 @@ export const Hr = styled.hr`
     background-color: white;
     margin-top: 16px;
     opacity: 0.25;
+
+    @media(min-width: 1440px) {
+        width: 280px;
+    }
 `
 
 export const ReadDiv = styled.div`
     display: flex;
     gap: 152.78px;
     margin-top: 20px;
+
+    @media(min-width: 1440px) {
+        gap: 141px;
+    }
 `
 
 export const Read = styled.p`
-     font-weight: 700;
+    font-weight: 700;
     font-size: 12px;
     line-height: 15.62px;
     letter-spacing: 2px;
@@ -94,5 +140,11 @@ export const WrapDiv = styled.div`
     @media(min-width: 768px) {
         width: 384px;
     }
+
+    @media(min-width: 1440px) {
+        width: 360px;
+    }
     
 `
+
+
