@@ -61,7 +61,6 @@ export default function Features(props) {
           <Text>{props.images[4].text}</Text>
         </TextContainer>
       </Container>
-      <Beta />
       <IconsMainContainer>
         {icons.map((item) => {
           return (
@@ -75,6 +74,7 @@ export default function Features(props) {
           );
         })}
       </IconsMainContainer>
+      <Beta />
     </>
   );
 }

@@ -11,7 +11,13 @@ export const StyledBeta = styled.div`
 
     @media(min-width: 768px) {
         max-width: 768px;
+        height: 280px;
         background-image: url("./assets/shared/tablet/bg-beta.jpg");
+    }
+
+    @media(min-width: 1440px) {
+        max-width: 1440px;
+        background-image: url("./assets/shared/desktop/bg-beta.jpg");
     }
 `
 export const ColorDiv = styled.div`
@@ -50,6 +56,11 @@ export const TextBeta = styled.h1`
         top: 68px;
         left: 39px;
     }
+
+    @media(min-width: 1440px) {
+        top: 68px;
+        left: 165px;
+    }
 `
 
 export const InviteBeta = styled.div`
@@ -63,5 +74,10 @@ export const InviteBeta = styled.div`
     @media(min-width: 768px) {
         top: 132px;
         left: 562px;
+    }
+
+    @media(min-width: 1440px) {
+        top: 132px;
+        left: 1109px;
     }
 `
