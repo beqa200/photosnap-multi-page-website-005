@@ -8,6 +8,7 @@ import {
   InviteDiv,
   InviteText,
   FooterText,
+  LinksDiv,
 } from "../styled-components/Footer.styled";
 import { links } from "./Header";
 import { StyledLink } from "../styled-components/Header.styled";
@@ -31,27 +32,33 @@ const iconsArr = [
 export default function Footer() {
   return (
     <StyledFooter>
-      <BlockDiv>
-        <LogoTitle2>
-          <img src="./assets/logo.png" alt="logo" />
-          <img src="./assets/photosnap2.png" alt="title" />
-        </LogoTitle2>
-      </BlockDiv>
-      <IconsDiv>
-        {iconsArr.map((icon) => (
-          <IconArrow src={icon} key={Math.random()} />
-        ))}
-      </IconsDiv>
-      {footerLinks.map((item) => (
-        <StyledLink to={item.link} key={Math.random()}>
-          <LinkTitleFooter>{item.name}</LinkTitleFooter>
-        </StyledLink>
-      ))}
-      <InviteDiv>
-        <InviteText>GET AN INVITE</InviteText>
-        <IconArrow src="./assets/shared/desktop/arrow.svg" alt="arrow" />
-      </InviteDiv>
-      <FooterText>Copyright 2019. All Rights Reserved</FooterText>
+      <div>
+        <BlockDiv>
+          <LogoTitle2>
+            <img src="./assets/logo.png" alt="logo" />
+            <img src="./assets/photosnap2.png" alt="title" />
+          </LogoTitle2>
+        </BlockDiv>
+        <IconsDiv>
+          {iconsArr.map((icon) => (
+            <IconArrow src={icon} key={Math.random()} />
+          ))}
+        </IconsDiv>
+        <LinksDiv>
+          {footerLinks.map((item) => (
+            <StyledLink to={item.link} key={Math.random()}>
+              <LinkTitleFooter>{item.name}</LinkTitleFooter>
+            </StyledLink>
+          ))}
+        </LinksDiv>
+      </div>
+      <div>
+        <InviteDiv>
+          <InviteText>GET AN INVITE</InviteText>
+          <IconArrow src="./assets/shared/desktop/arrow.svg" alt="arrow" />
+        </InviteDiv>
+        <FooterText>Copyright 2019. All Rights Reserved</FooterText>
+      </div>
     </StyledFooter>
   );
 }
