@@ -13,6 +13,10 @@ export const StyledFooter = styled.footer`
         justify-content: space-between;
         padding: 64px 5.07%;
     }
+
+    @media(min-width: 1440px) {
+        padding: 64px 11.6%;
+    }
 `
 
 export const LogoTitle2 = styled(LogoTitle)``
@@ -38,11 +42,30 @@ export const IconsDiv = styled.div`
     @media(min-width: 768px) {
         margin: 120px 0px 0px 0px;
     }
+
+    @media(min-width: 1440px) {
+        margin: 85px 0px 0px 0px;
+    }
 `
 
 export const IconArrow = styled.img`
     filter: invert(91%) sepia(97%) saturate(0%) hue-rotate(54deg) brightness(300%) contrast(150%);
+
+
 `
+
+export const IconApp = styled.img`
+    filter: invert(91%) sepia(97%) saturate(0%) hue-rotate(54deg) brightness(300%) contrast(150%);
+
+    @media(min-width: 1440px) {
+        cursor: pointer;
+
+        &:hover {
+            filter: none;
+        }
+    }
+`
+
 export const LinkTitleFooter = styled.p`
     font-weight: 700;
     font-size: 12px;
@@ -51,6 +74,14 @@ export const LinkTitleFooter = styled.p`
     text-align: center;
     color: white;
     margin-top: 19px;
+
+    @media(min-width: 1440px) {
+        cursor: pointer;
+
+        &:hover {
+            opacity: .3;
+        }
+    }
 `
 
 export const InviteDiv = styled.div`
@@ -67,9 +98,21 @@ export const InviteDiv = styled.div`
 
 `
 
-export const InviteText = styled(LinkTitleFooter)`
+export const InviteText = styled.p`
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15.62px;
+    letter-spacing: 2px;
+    color: white;
     text-align: start;
     margin-top: 3px;
+
+    @media(min-width: 1440px) {
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 `
 
 export const FooterText = styled.p`
@@ -84,6 +127,10 @@ export const FooterText = styled.p`
     @media(min-width: 768px) {
         margin-top: 120px;
     }
+
+    @media(min-width: 1440px) {
+        margin-top: 85px;
+    }
 `
 
 export const LinksDiv = styled.div`
@@ -92,5 +139,10 @@ export const LinksDiv = styled.div`
         display: flex;
         gap: 26px;
         margin-top: -160px;
+    }
+
+    @media(min-width: 1440px) {
+        display: block;
+        margin: -170px 0px 0px 270px;
     }
 `

@@ -4,6 +4,7 @@ import {
   BlockDiv,
   IconsDiv,
   IconArrow,
+  IconApp,
   LinkTitleFooter,
   InviteDiv,
   InviteText,
@@ -41,7 +42,7 @@ export default function Footer() {
         </BlockDiv>
         <IconsDiv>
           {iconsArr.map((icon) => (
-            <IconArrow src={icon} key={Math.random()} />
+            <IconApp src={icon} key={Math.random()} />
           ))}
         </IconsDiv>
         <LinksDiv>
