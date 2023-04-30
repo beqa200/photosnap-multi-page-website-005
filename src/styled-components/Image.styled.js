@@ -83,9 +83,11 @@ export const ContentDiv = styled.div`
     position: absolute;
     z-index: 2;
 
+
     @media(min-width: 768px) {
         top: 340px;
     }
+
 `
 
 export const WrapDiv = styled.div`
