@@ -9,7 +9,7 @@ import {
   ImageDiv,
   Stick
 } from "../styled-components/PhotoStoryStyled";
-import{IconDiv , IconTitle,IconP,IconContainer,IconsMainContainer} from '../styled-components/IconBoxStyled'
+import{IconDiv , IconTitle,IconP,IconContainer,IconsMainContainer} from '../styled-components/IconBoxStyled';
 
 import Beta from "../components/Beta";
 
@@ -49,7 +49,7 @@ export default function Features(props) {
   ];
 
   return (
-    <IconsMainContainer>
+    <>
       <Container style={{ backgroundColor: "#000000" }}>
         <ImgWrapper>
           <ImageDiv src={props.images[4].path} alt={props.images[4].alt} />
@@ -62,10 +62,10 @@ export default function Features(props) {
         </TextContainer>
       </Container>
       <Beta />
-      <div>
+      <IconsMainContainer>
         {icons.map((item) => {
           return (
-            <IconContainer>
+            <IconContainer flex ='1 1 339px' width='450px'>
               <IconDiv>
                 <img src={item.icon} alt={item.alt} />
               </IconDiv>
@@ -74,7 +74,7 @@ export default function Features(props) {
             </IconContainer>
           );
         })}
-      </div>
-    </IconsMainContainer>
+      </IconsMainContainer>
+    </>
   );
 }
