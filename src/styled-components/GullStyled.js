@@ -101,6 +101,7 @@ const GullTitle = styled.h3`
   }
 `;
 const MenuWrapper = styled.div`
+width:370px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -112,7 +113,6 @@ const Menu = styled.div`
   font-weight: 700;
   font-size: 10px;
   line-height: 13.02px;
-  // text-align: center;
   font-family: "DM Sans";
   letter-spacing: 1.67px;
   font-color: #000000;
@@ -121,14 +121,17 @@ const Menu = styled.div`
   width:140px;
 `;
 const CheckWrapper = styled.div`
+width:272px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  gap:110px;
+  flex-direction:row-reverse;
   margin-bottom: 24px;
   margin-top: 8px;
   @media (min-width: 768px) {
     width: 423px;
-    justify-content: space-between;
+    gap:110px;
+    flex-direction:row-reverse;
+    // justify-content: space-between;
     align-items: center;  
   }
 `;
@@ -156,7 +159,6 @@ const TabletMenuWrapper = styled.div`
   }
 `;
 const TabletMenuContainer = styled.div`
-  // display: flex;
   flex-direction:column;
   width: 318px;
   margin: 0 auto;

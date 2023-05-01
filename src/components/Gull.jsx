@@ -13,7 +13,8 @@ import {
   GullMainTitle,
   TabletContainer,
   TabletMenuWrapper,
-  TabletMenuContainer,CompareTitle
+  TabletMenuContainer,
+  CompareTitle,
 } from "../styled-components/GullStyled";
 
 export default function Gull(props) {
@@ -26,6 +27,7 @@ export default function Gull(props) {
         third: "BUSINESS",
       },
       gullIcon: "./assets/pricing/desktop/check.svg",
+      checks: 3,
     },
 
     {
@@ -36,6 +38,7 @@ export default function Gull(props) {
         third: "BUSINESS",
       },
       gullIcon: "./assets/pricing/desktop/check.svg",
+      checks: 3,
     },
 
     {
@@ -46,6 +49,7 @@ export default function Gull(props) {
         third: "BUSINESS",
       },
       gullIcon: "./assets/pricing/desktop/check.svg",
+      checks: 2,
     },
 
     {
@@ -56,6 +60,7 @@ export default function Gull(props) {
         third: "BUSINESS",
       },
       gullIcon: "./assets/pricing/desktop/check.svg",
+      checks: 2,
     },
 
     {
@@ -66,6 +71,7 @@ export default function Gull(props) {
         third: "BUSINESS",
       },
       gullIcon: "./assets/pricing/desktop/check.svg",
+      checks: 1,
     },
 
     {
@@ -76,6 +82,7 @@ export default function Gull(props) {
         third: "BUSINESS",
       },
       gullIcon: "./assets/pricing/desktop/check.svg",
+      checks: 1,
     },
     {
       title: "SEARCH ENGINE INDEXING",
@@ -85,6 +92,7 @@ export default function Gull(props) {
         third: "BUSINESS",
       },
       gullIcon: "./assets/pricing/desktop/check.svg",
+      checks: 1,
     },
     {
       title: "CUSTOM ANALYTICS",
@@ -94,25 +102,26 @@ export default function Gull(props) {
         third: "BUSINESS",
       },
       gullIcon: "./assets/pricing/desktop/check.svg",
+      checks: 1,
     },
   ];
   return (
     <div>
       <GullMainContainer>
         <CompareTitle>COMPARE</CompareTitle>
-       <TabletMenuContainer>
-       <GullMainTitle>THE FEATURES</GullMainTitle>
-       <BlackLine></BlackLine>
-        <TabletMenuWrapper>
-          <Menu>BASIC</Menu>
-          <Menu>PRO</Menu>
-          <Menu>BUSINESS</Menu>
-        </TabletMenuWrapper>
-       </TabletMenuContainer>
+        <TabletMenuContainer>
+          <GullMainTitle>THE FEATURES</GullMainTitle>
+          <BlackLine></BlackLine>
+          <TabletMenuWrapper>
+            <Menu>BASIC</Menu>
+            <Menu>PRO</Menu>
+            <Menu>BUSINESS</Menu>
+          </TabletMenuWrapper>
+        </TabletMenuContainer>
 
         {gullBox.map((item) => {
           return (
-            <gullContainer>
+            <>
               {/* <BlackLine></BlackLine> */}
               <TabletContainer>
                 <TitleWrapper>
@@ -124,20 +133,32 @@ export default function Gull(props) {
                   <Menu>{item.menu.third}</Menu>
                 </MenuWrapper>
                 <CheckWrapper>
-                  <CheckSign>
+                  {item.checks >= 1 && (
+                    <CheckSign>
+                      <img src={item.gullIcon} />
+                    </CheckSign>
+                  )}
+                  {item.checks >= 2 && (
+                    <CheckSign>
+                      <img src={item.gullIcon} />
+                    </CheckSign>
+                  )}
+                  {item.checks >= 3 && (
+                    <CheckSign>
+                      <img src={item.gullIcon} />
+                    </CheckSign>
+                  )}
+
+                  {/* <CheckSign>
                     <img src={item.gullIcon} />
                   </CheckSign>
                   <CheckSign>
                     <img src={item.gullIcon} />
-                  </CheckSign>
-                  <CheckSign>
-                    <img src={item.gullIcon} />
-                  </CheckSign>
+                  </CheckSign> */}
                 </CheckWrapper>
-                
               </TabletContainer>
               <Line></Line>
-            </gullContainer>
+            </>
           );
         })}
       </GullMainContainer>
