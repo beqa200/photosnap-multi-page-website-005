@@ -105,7 +105,7 @@ const IconTitle = styled.h2`
   line-height: 25px;
   text-align: center;
   font-color: #000000;
-  font-family: "DM Sans", sans-serif;
+  font-family: "DM Sans",sans-serif;
   margin: 0 auto;
   position: absolute;
   top: 120px;

@@ -11,6 +11,7 @@ import {
 } from "../styled-components/PhotoStoryStyled";
 import Beta from '../components/Beta';
 import Price from '../components/Price';
+import Gull from '../components/Gull';
 
 
 export default function Pricing(props) {
@@ -29,6 +30,7 @@ export default function Pricing(props) {
       </Container>
       <Price />
        <Beta />
+       <Gull/>
     </>
   )
 }
