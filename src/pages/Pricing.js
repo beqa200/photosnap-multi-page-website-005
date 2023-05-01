@@ -29,8 +29,8 @@ export default function Pricing(props) {
         </TextContainer>
       </Container>
       <Price />
-       <Beta />
        <Gull/>
+       <Beta />
     </>
   )
 }
