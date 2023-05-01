@@ -47,12 +47,14 @@ export const StyledDiv = styled.div`
         background-size: 360px 500px;
         height: 500px;
         cursor: pointer;
-
+        transition: transform 0.3s ease;
+        
 
         &:hover {
-            top: -24px;
+            transform: translateY(-24px);
             z-index: 3;
         }
+
 
         &:hover ${ImageBot} {
             display: block;
