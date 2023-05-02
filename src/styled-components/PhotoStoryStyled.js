@@ -57,13 +57,14 @@ height:317px;
     width:273px;
     height:650px;
   }
-  // background-image:url("./assets/home/tablet/beautiful-stories.jpg");
+  
   @media screen and (min-width: 1440px) {
     .noneDiv {
       display: none;
     }
     width: 830px;
     height: 650px;
+    background-image:url("./assets/stories/desktop/moon-of-appalacia.jpg");
   }
 `;
 const ImageDiv = styled.img`
