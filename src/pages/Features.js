@@ -7,12 +7,17 @@ import {
   Invite,
   ImgWrapper,
   ImageDiv,
-  Stick
+  Stick,
 } from "../styled-components/PhotoStoryStyled";
-import{IconDiv , IconTitle,IconP,IconContainer,IconsMainContainer} from '../styled-components/IconBoxStyled';
+import {
+  IconDiv,
+  IconTitle,
+  IconP,
+  IconContainer,
+  IconsMainContainer,
+} from "../styled-components/IconBoxStyled";
 
 import Beta from "../components/Beta";
-
 
 export default function Features(props) {
   const icons = [
@@ -50,11 +55,10 @@ export default function Features(props) {
 
   return (
     <>
-      <Container style={{ backgroundColor: "#000000" }} ordering='row-reverse'>
+      <Container style={{ backgroundColor: "#000000" }} ordering="row-reverse">
         <ImgWrapper>
           <ImageDiv src={props.images[4].pathD} alt={props.images[4].alt} />
         </ImgWrapper>
-
         <TextContainer ptop="72px" pbot="72px">
           <Stick />
           <Title>{props.images[4].title}</Title>
@@ -64,7 +68,7 @@ export default function Features(props) {
       <IconsMainContainer>
         {icons.map((item) => {
           return (
-            <IconContainer flex ='1 1 339px' width='450px'>
+            <IconContainer flex="1 1 339px" width="450px">
               <IconDiv>
                 <img src={item.icon} alt={item.alt} />
               </IconDiv>

@@ -81,7 +81,6 @@ const TitleWrapper = styled.div`
   width: 272px;
   height: 16px;
   margin-bottom: 16px;
-
   @media (min-width: 768px) {
     margin-right: 90px;
     width: 233px;
@@ -93,7 +92,6 @@ const GullTitle = styled.h3`
   line-height: 15.62px;
   font-family: "DM Sans";
   letter-spacing: 2px;
-
   color: #000000;
   @media (min-width: 768px) {
     width: 233px;
@@ -103,7 +101,6 @@ const GullTitle = styled.h3`
 const MenuWrapper = styled.div`
   width: 272px;
   display: flex;
-
   justify-content: space-between;
   align-items: center;
   @media (min-width: 768px) {
@@ -128,9 +125,6 @@ const CheckWrapper = styled.div`
   flex-direction: row-reverse;
   margin-bottom: 24px;
   margin-top: 8px;
-  
-  
-  
   @media (min-width: 768px) {
     gap: 100px;
     margin-right: 30px;
@@ -146,8 +140,6 @@ const CheckSign = styled.div`
   height: 12px;
   color: black;
   gap: 70px;
-  // margin-right: 90px;
-  // margin-right:${({ marginRight }) => marginRight}
 `;
 const TabletContainer = styled.div`
   width: 100%;
@@ -177,7 +169,6 @@ const TabletMenuContainer = styled.div`
   width: 100%;
   margin: 0 auto;
   align-items: center;
-
   @media (min-width: 768px) {
     width: 689px;
     flex-direction: column;
