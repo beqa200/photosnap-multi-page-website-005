@@ -33,10 +33,12 @@ export const links = [
 export default function Header({ isMenuVisible, setIsMenuVisible }) {
   return (
     <StyledHeader>
-      <LogoTitle>
-        <img src="./assets/logo.png" />
-        <img src="./assets/PHOTOSNAP.png" />
-      </LogoTitle>
+      <StyledLink to="/">
+        <LogoTitle>
+          <img src="./assets/logo.png" />
+          <img src="./assets/PHOTOSNAP.png" />
+        </LogoTitle>
+      </StyledLink>
       <MenuInHeader>
         {links.map((item) => (
           <StyledLink to={item.link} key={Math.random()}>
