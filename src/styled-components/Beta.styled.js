@@ -5,7 +5,7 @@ export const StyledBeta = styled.div`
     background-image: url("./assets/Bitmap.jpg");
     background-repeat: no-repeat;
     position: relative;
-    margin: auto;
+    margin: 64px auto 0px;
     max-width: 375px;
     height: 288px;
 
@@ -13,6 +13,7 @@ export const StyledBeta = styled.div`
         max-width: 768px;
         height: 280px;
         background-image: url("./assets/shared/tablet/bg-beta.jpg");
+        margin: 0px auto 0px;
     }
 
     @media(min-width: 1440px) {
