@@ -1,37 +1,36 @@
 import styled from "styled-components";
 const GullMainContainer = styled.div`
-  width: 375px;
-  padding: 64px 75px 64px 29px;
+  width: 318px;
   margin: 0 auto;
   @media (min-width: 768px) {
     width: 689px;
-    // padding: 64px 40px 112px 39px;
+    padding: 64px 40px 112px 39px;
   }
   @media (min-width: 1440px) {
     width: 731px;
-    margin-bottom:160px;
+    margin-bottom: 160px;
   }
 `;
-const CompareTitle=styled.h1`
-     display:none;
-@media (min-width: 768px){
-  display:blocK;
-  width:689px;
-  height:48px;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 48px;
-  font-family: "DM Sans";
-  letter-spacing: 4.17px;
-  font-color: #000000;
-  text-align:center;
-  margin:0 auto;
-  margin-bottom:64px;
-  @media (min-width: 1440px){
-    width:540px;
-    margin-top:40px;
+const CompareTitle = styled.h1`
+  display: none;
+  @media (min-width: 768px) {
+    display: blocK;
+    width: 689px;
+    height: 48px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    font-family: "DM Sans";
+    letter-spacing: 4.17px;
+    color: #000000;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 64px;
+    @media (min-width: 1440px) {
+      width: 540px;
+      margin-top: 40px;
+    }
   }
-}
 `;
 const GullMainTitle = styled.h2`
   width: 140px;
@@ -39,23 +38,22 @@ const GullMainTitle = styled.h2`
   font-weight: 700;
   font-size: 12px;
   line-height: 15.62px;
-  font-color: #000000;
+  color: #000000;
   font-family: "DM Sans";
   letter-spacing: 2px;
   margin-bottom: 23px;
   @media (min-width: 768px) {
     width: 140px;
-    height:16px;
+    height: 16px;
   }
-  @media (min-width: 1440px){
-    width:731px;
+  @media (min-width: 1440px) {
+    width: 731px;
     margin-inline-end: auto;
   }
 `;
 
 const GullContainer = styled.div``;
 const Line = styled.div`
-  width: 318px;
   height: 1px;
   background-color: #dfdfdf;
   margin-bottom: 23px;
@@ -68,7 +66,7 @@ const Line = styled.div`
 `;
 
 const BlackLine = styled.div`
-  width: 318px;
+  width: 100%;
   height: 1px;
   background-color: #000000;
   margin-bottom: 23px;
@@ -83,6 +81,7 @@ const TitleWrapper = styled.div`
   width: 272px;
   height: 16px;
   margin-bottom: 16px;
+
   @media (min-width: 768px) {
     margin-right: 90px;
     width: 233px;
@@ -94,15 +93,17 @@ const GullTitle = styled.h3`
   line-height: 15.62px;
   font-family: "DM Sans";
   letter-spacing: 2px;
-  font-color: #000000;
+
+  color: #000000;
   @media (min-width: 768px) {
     width: 233px;
-    margin-right:50px;
+    margin-right: 50px;
   }
 `;
 const MenuWrapper = styled.div`
-width:272px;
+  width: 272px;
   display: flex;
+
   justify-content: space-between;
   align-items: center;
   @media (min-width: 768px) {
@@ -115,70 +116,72 @@ const Menu = styled.div`
   line-height: 13.02px;
   font-family: "DM Sans";
   letter-spacing: 1.67px;
-  font-color: #000000;
+  color: #000000;
   mix-blend-mode: normal;
   opacity: 0.5;
-  width:140px;
+  width: 140px;
 `;
 const CheckWrapper = styled.div`
-width:272px;
   display: flex;
-  gap:90px;
-  flex-direction:row-reverse;
+  gap: 75px;
+  width: 62%;
+  flex-direction: row-reverse;
   margin-bottom: 24px;
   margin-top: 8px;
+  
+  
+  
   @media (min-width: 768px) {
-    // width: 423px;
-    gap:124px;
-     
+    gap: 100px;
+    margin-right: 30px;
   }
-  @media (min-width: 1440px){
-   
+  @media (min-width: 1440px) {
+    gap: 105px;
+    margin-right: 70px;
   }
 `;
 const CheckSign = styled.div`
-
   color: #000000;
   width: 16px;
   height: 12px;
   color: black;
-  gap:70px;
+  gap: 70px;
   // margin-right: 90px;
-  // margin-right:${({marginRight})=> marginRight}
- 
+  // margin-right:${({ marginRight }) => marginRight}
 `;
 const TabletContainer = styled.div`
-width:375px;
+  width: 100%;
+  margin: auto;
   @media (min-width: 768px) {
     display: flex;
-    justify-content:space-between;
-    margin-right:10px;
+    justify-content: space-between;
+    margin-right: 10px;
   }
 `;
 const TabletMenuWrapper = styled.div`
-width:272px;
-@media(min-width:336px){
-    display:none;
+  width: 272px;
+  @media (min-width: 336px) {
+    display: none;
+  }
   @media (min-width: 768px) {
     display: block;
-    display:flex;
-    margin-left:320px;
-    align-items:center;
-    margin-bottom:16px;
+    display: flex;
+    margin-left: 320px;
+    align-items: center;
+    margin-bottom: 16px;
+    gap: 82px;
   }
 `;
 const TabletMenuContainer = styled.div`
-
-  flex-direction:column;
-  width: 318px;
+  flex-direction: column;
+  width: 100%;
   margin: 0 auto;
   align-items: center;
-  }
-  @media(min-width:768px){
-    width:689px;
-    flex-direction:column;
-  }
 
+  @media (min-width: 768px) {
+    width: 689px;
+    flex-direction: column;
+  }
 `;
 
 export {
@@ -195,5 +198,6 @@ export {
   GullMainTitle,
   TabletContainer,
   TabletMenuContainer,
-  TabletMenuWrapper,CompareTitle
+  TabletMenuWrapper,
+  CompareTitle,
 };
