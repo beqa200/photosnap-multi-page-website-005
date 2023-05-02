@@ -128,7 +128,7 @@ export default function Gull(props) {
                 </TitleWrapper>
                 <MenuWrapper>
                   <Menu>{item.menu.first}</Menu>
-                  <Menu>{item.menu.second}</Menu>
+                  <Menu >{item.menu.second}</Menu>
                   <Menu>{item.menu.third}</Menu>
                 </MenuWrapper>
                 <CheckWrapper>
@@ -138,7 +138,7 @@ export default function Gull(props) {
                     </CheckSign>
                   )}
                   {item.checks >= 2 && (
-                    <CheckSign>
+                    <CheckSign >
                       <img src={item.gullIcon} />
                     </CheckSign>
                   )}

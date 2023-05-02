@@ -17,7 +17,7 @@ import Gull from '../components/Gull';
 export default function Pricing(props) {
   return (
     <>
-     <Container style={{ backgroundColor: '#000000' }}>
+     <Container style={{ backgroundColor: '#000000' }} ordering='row-reverse'>
         <ImgWrapper>
           <ImageDiv src={props.images[5].pathD} alt={props.images[5].alt} />
         </ImgWrapper>
