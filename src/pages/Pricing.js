@@ -21,7 +21,6 @@ export default function Pricing(props) {
         <ImgWrapper>
           <ImageDiv src={props.images[5].pathD} alt={props.images[5].alt} />
         </ImgWrapper>
-
         <TextContainer ptop="72px" pbot="72px">
           <Stick />
           <Title>{props.images[5].title}</Title>

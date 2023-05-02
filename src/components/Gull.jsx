@@ -121,7 +121,6 @@ export default function Gull(props) {
         {gullBox.map((item) => {
           return (
             <>
-              {/* <BlackLine></BlackLine> */}
               <TabletContainer>
                 <TitleWrapper>
                   <GullTitle>{item.title}</GullTitle>
