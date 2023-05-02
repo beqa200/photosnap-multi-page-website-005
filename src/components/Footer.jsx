@@ -35,10 +35,12 @@ export default function Footer() {
     <StyledFooter>
       <div>
         <BlockDiv>
-          <LogoTitle2>
-            <img src="./assets/logo.png" alt="logo" />
-            <img src="./assets/photosnap2.png" alt="title" />
-          </LogoTitle2>
+          <StyledLink to="/">
+            <LogoTitle2>
+              <img src="./assets/logo.png" alt="logo" />
+              <img src="./assets/photosnap2.png" alt="title" />
+            </LogoTitle2>
+          </StyledLink>
         </BlockDiv>
         <IconsDiv>
           {iconsArr.map((icon) => (
