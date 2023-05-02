@@ -23,7 +23,7 @@ export default function Image({ bg, dateTxt, title, creator, bgTablet }) {
           <Hr />
           <ReadDiv>
             <Read>READ STORY</Read>
-            <Arrow src="./assets/shared/desktop/arrow.svg" />
+            <Arrow src="./assets/shared/desktop/arrow.svg" alt="arrow" />
           </ReadDiv>
         </ContentDiv>
         <ImageBot />
