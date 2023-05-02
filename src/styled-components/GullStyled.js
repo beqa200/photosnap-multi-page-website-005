@@ -1,6 +1,6 @@
 import styled from "styled-components";
 const GullMainContainer = styled.div`
-  width: 330px;
+  width: 375px;
   padding: 64px 75px 64px 29px;
   margin: 0 auto;
   @media (min-width: 768px) {
@@ -80,7 +80,7 @@ const BlackLine = styled.div`
   }
 `;
 const TitleWrapper = styled.div`
-  width: 233px;
+  width: 272px;
   height: 16px;
   margin-bottom: 16px;
   @media (min-width: 768px) {
@@ -101,7 +101,7 @@ const GullTitle = styled.h3`
   }
 `;
 const MenuWrapper = styled.div`
-width:370px;
+width:272px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -142,12 +142,14 @@ const CheckSign = styled.div`
   color: black;
 `;
 const TabletContainer = styled.div`
+width:375px;
   @media (min-width: 768px) {
     display: flex;
     justify-content:space-between;
   }
 `;
 const TabletMenuWrapper = styled.div`
+width:272px;
 @media(min-width:336px){
     display:none;
   @media (min-width: 768px) {
@@ -159,6 +161,7 @@ const TabletMenuWrapper = styled.div`
   }
 `;
 const TabletMenuContainer = styled.div`
+
   flex-direction:column;
   width: 318px;
   margin: 0 auto;

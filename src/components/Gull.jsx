@@ -1,7 +1,6 @@
 import React from "react";
 import {
   GullMainContainer,
-  GullContainer,
   CheckWrapper,
   CheckSign,
   MenuWrapper,
@@ -148,13 +147,6 @@ export default function Gull(props) {
                       <img src={item.gullIcon} />
                     </CheckSign>
                   )}
-
-                  {/* <CheckSign>
-                    <img src={item.gullIcon} />
-                  </CheckSign>
-                  <CheckSign>
-                    <img src={item.gullIcon} />
-                  </CheckSign> */}
                 </CheckWrapper>
               </TabletContainer>
               <Line></Line>

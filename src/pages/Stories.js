@@ -135,7 +135,7 @@ export default function Stories(props) {
     <>
       <Container bg='./assets/stories/mobile/moon-of-appalacia.jpg' >
         <ImgWrapper >
-          <ImageDiv src={props.images[3].path} alt={props.images[3].alt } className="noneDiv"/>
+          <ImageDiv src={props.images[3].pathD} alt={props.images[3].alt } className="noneDiv"/>
         </ImgWrapper>
 
         <TextContainer bgColor="black" transparentColor='transparent' ptop="48px" pbot="48px">

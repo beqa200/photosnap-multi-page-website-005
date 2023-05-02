@@ -19,7 +19,7 @@ export default function Pricing(props) {
     <>
      <Container style={{ backgroundColor: '#000000' }}>
         <ImgWrapper>
-          <ImageDiv src={props.images[5].path} alt={props.images[5].alt} />
+          <ImageDiv src={props.images[5].pathD} alt={props.images[5].alt} />
         </ImgWrapper>
 
         <TextContainer ptop="72px" pbot="72px">

@@ -58,7 +58,7 @@ const minContent = [
     <>
       <Container style={{ backgroundColor: 'black' }} ordering='row-reverse'>
         <ImgWrapper>
-          <ImageDiv src={props.images[1].path} alt={props.images[1].alt} />
+          <ImageDiv src={props.images[1].pathD} alt={props.images[1].alt} />
         </ImgWrapper>
 
         <TextContainer ptop="72px" pbot="72px">
@@ -74,7 +74,7 @@ const minContent = [
 
       <Container style={{ backgroundColor: '#ffffff' }} >
         <ImgWrapper>
-          <ImageDiv src={props.images[0].path} alt={props.images[0].alt }  />
+          <ImageDiv src={props.images[0].pathD} alt={props.images[0].alt }  />
         </ImgWrapper>
 
         <TextContainer ptop="72px" pbot="72px">
@@ -89,7 +89,7 @@ const minContent = [
 
       <Container style={{ backgroundColor: '#ffffff'}} ordering='row-reverse'>
         <ImgWrapper>
-          <ImageDiv src={props.images[2].path} alt={props.images[2].alt} />
+          <ImageDiv src={props.images[2].pathD} alt={props.images[2].alt} />
         </ImgWrapper>
         <TextContainer ptop="92px" pbot="92px">
           <BlackTitle>{props.images[2].title}</BlackTitle>

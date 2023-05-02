@@ -16,6 +16,8 @@ function App() {
     {
       id: 1,
       path: "./assets/home/mobile/beautiful-stories.jpg",
+      pathT: "./assets/home/tablet/beautiful-stories.jpg",
+      pathD: "./assets/home/desktop/beautiful-stories.jpg",
       alt: "beautifulImg",
       title: "BEAUTIFUL STORIES EVERY TIME ",
       text: "We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone.",
@@ -25,6 +27,8 @@ function App() {
     {
       id: 2,
       path: "./assets/home/mobile/create-and-share.jpg",
+      pathT: "./assets/home/tablet/create-and-share.jpg",
+      pathD: "./assets/home/desktop/create-and-share.jpg",
       alt: "createImg",
       title: "CREATE AND SHARE YOUR PHOTO STORIES. ",
       text: "Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.",
@@ -34,6 +38,8 @@ function App() {
     {
       id: 3,
       path: "./assets/home/mobile/designed-for-everyone.jpg",
+      pathT: "./assets/home/tablet/designed-for-everyone.jpg",
+      pathD: "./assets/home/desktop/designed-for-everyone.jpg",
       alt: "designedImg",
       title: "DESIGNED FOR EVERYONE",
       text: "Photosnap can help you create stories that resonate with your audience.  Our tool is designed for photographers of all levels, brands, businesses you name it.",
@@ -43,6 +49,8 @@ function App() {
     {
       id: 4,
       path: "./assets/stories/mobile/moon-of-appalacia.jpg",
+      pathT: "./assets/stories/tablet/moon-of-appalacia.jpg",
+      pathD: "./assets/stories/desktop/moon-of-appalacia.jpg",
       alt: "moonImg",
       topTitle: "LAST MONTH’S FEATURED STORY",
       title: "HAZY FULL MOON OF APPALACHIA",
@@ -54,6 +62,8 @@ function App() {
     {
       id: 5,
       path: "./assets/features/mobile/hero.jpg",
+      pathT: "./assets/features/tablet/hero.jpg",
+      pathD: "./assets/features/desktop/hero.jpg",
       alt: "heroImg",
       title: "FEATURES",
       text: "We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories.",
@@ -61,6 +71,8 @@ function App() {
     {
       id: 6,
       path: "./assets/pricing/mobile/hero.jpg",
+      pathT: "./assets/pricing/tablet/hero.jpg",
+      pathD: "./assets/pricing/desktop/hero.jpg",
       alt: "beautifulImg",
       title: "PRICING",
       text: "Create a your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos.",

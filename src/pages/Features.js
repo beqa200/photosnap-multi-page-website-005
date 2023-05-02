@@ -52,7 +52,7 @@ export default function Features(props) {
     <>
       <Container style={{ backgroundColor: "#000000" }}>
         <ImgWrapper>
-          <ImageDiv src={props.images[4].path} alt={props.images[4].alt} />
+          <ImageDiv src={props.images[4].pathD} alt={props.images[4].alt} />
         </ImgWrapper>
 
         <TextContainer ptop="72px" pbot="72px">
