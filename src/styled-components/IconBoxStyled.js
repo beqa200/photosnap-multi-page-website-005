@@ -17,7 +17,7 @@ align-items:center;
     height:auto;
     display:flex;
     justify-content:space-between;
-    text-align:center:
+    text-align:center;
     flex-wrap:wrap;
     flex-direction:row;
     margin:0 auto;
@@ -25,6 +25,7 @@ align-items:center;
     margin-top:120px;
 }
 `;
+
 const IconsMainContainer = styled.div`
   display: flex;
   justify-content:space-around;
@@ -53,7 +54,7 @@ const IconsMainContainer = styled.div`
 const IconContainer = styled.div`
 width:350px;
 height:240px;
-margin-top:56px:
+margin-top:56px;
 margin-bottom:56px;
 display:flex;
 justify-content:center;
@@ -79,7 +80,7 @@ position:relative;
 &:nth-child(2) {
     margin-bottom:56px;
 }
-}
+
 @media(min-width:768px){
     flex:${({flex})=>flex};
     max-width:${({width})=>width};
@@ -104,7 +105,7 @@ const IconTitle = styled.h2`
   font-size: 18px;
   line-height: 25px;
   text-align: center;
-  font-color: #000000;
+  color: #000000;
   font-family: "DM Sans",sans-serif;
   margin: 0 auto;
   position: absolute;
