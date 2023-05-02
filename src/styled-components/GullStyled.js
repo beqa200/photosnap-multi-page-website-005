@@ -4,11 +4,12 @@ const GullMainContainer = styled.div`
   margin: 0 auto;
   @media (min-width: 768px) {
     width: 689px;
-    padding: 64px 40px 112px 39px;
+    padding: 0px 40px 112px 39px;
   }
   @media (min-width: 1440px) {
     width: 731px;
     margin-bottom: 160px;
+    padding: 0px 40px 0px 39px;
   }
 `;
 const CompareTitle = styled.h1`
