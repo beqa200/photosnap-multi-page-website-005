@@ -14,7 +14,7 @@
 ### Prerequisites
 
 - <img src="readme/npm.png" width="25" style="top: 8px" /> _npm @8 and up_
-- <img src="readme/js.png" width="25" style="top: 8px" /> \_javascript es6
+- <img src="readme/js.png" width="25" style="top: 8px" /> _javascript es6
 
 #
 
