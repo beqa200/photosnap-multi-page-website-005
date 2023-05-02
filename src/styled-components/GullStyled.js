@@ -1,11 +1,11 @@
 import styled from "styled-components";
 const GullMainContainer = styled.div`
-  width: 330px;
+  width: 375px;
   padding: 64px 75px 64px 29px;
   margin: 0 auto;
   @media (min-width: 768px) {
     width: 689px;
-    padding: 64px 40px 112px 39px;
+    // padding: 64px 40px 112px 39px;
   }
   @media (min-width: 1440px) {
     width: 731px;
@@ -29,7 +29,7 @@ const CompareTitle=styled.h1`
   margin-bottom:64px;
   @media (min-width: 1440px){
     width:540px;
-    margin-top:160px;
+    margin-top:40px;
   }
 }
 `;
@@ -80,7 +80,7 @@ const BlackLine = styled.div`
   }
 `;
 const TitleWrapper = styled.div`
-  width: 233px;
+  width: 272px;
   height: 16px;
   margin-bottom: 16px;
   @media (min-width: 768px) {
@@ -101,7 +101,7 @@ const GullTitle = styled.h3`
   }
 `;
 const MenuWrapper = styled.div`
-width:370px;
+width:272px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -123,31 +123,40 @@ const Menu = styled.div`
 const CheckWrapper = styled.div`
 width:272px;
   display: flex;
-  gap:110px;
+  gap:90px;
   flex-direction:row-reverse;
   margin-bottom: 24px;
   margin-top: 8px;
   @media (min-width: 768px) {
-    width: 423px;
-    gap:110px;
-    flex-direction:row-reverse;
-    // justify-content: space-between;
-    align-items: center;  
+    // width: 423px;
+    gap:124px;
+     
+  }
+  @media (min-width: 1440px){
+   
   }
 `;
 const CheckSign = styled.div`
+
   color: #000000;
   width: 16px;
   height: 12px;
   color: black;
+  gap:70px;
+  // margin-right: 90px;
+  // margin-right:${({marginRight})=> marginRight}
+ 
 `;
 const TabletContainer = styled.div`
+width:375px;
   @media (min-width: 768px) {
     display: flex;
     justify-content:space-between;
+    margin-right:10px;
   }
 `;
 const TabletMenuWrapper = styled.div`
+width:272px;
 @media(min-width:336px){
     display:none;
   @media (min-width: 768px) {
@@ -159,6 +168,7 @@ const TabletMenuWrapper = styled.div`
   }
 `;
 const TabletMenuContainer = styled.div`
+
   flex-direction:column;
   width: 318px;
   margin: 0 auto;

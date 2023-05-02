@@ -50,9 +50,9 @@ export default function Features(props) {
 
   return (
     <>
-      <Container style={{ backgroundColor: "#000000" }}>
+      <Container style={{ backgroundColor: "#000000" }} ordering='row-reverse'>
         <ImgWrapper>
-          <ImageDiv src={props.images[4].path} alt={props.images[4].alt} />
+          <ImageDiv src={props.images[4].pathD} alt={props.images[4].alt} />
         </ImgWrapper>
 
         <TextContainer ptop="72px" pbot="72px">

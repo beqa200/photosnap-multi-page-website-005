@@ -57,6 +57,7 @@ height:317px;
     width:273px;
     height:650px;
   }
+  // background-image:url("./assets/home/tablet/beautiful-stories.jpg");
   @media screen and (min-width: 1440px) {
     .noneDiv {
       display: none;
@@ -72,11 +73,13 @@ const ImageDiv = styled.img`
     width: 273px;
     height:100%;
     object-fit: cover;
-    object-position: 35% 100%;
+    object-position: 47% 100%;
+   
   }
   @media (min-width: 1440px) {
     width: 830px;
     height: 100%;
+    object-position: 35% 100%;
   }
 `;
 
