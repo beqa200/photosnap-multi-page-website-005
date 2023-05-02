@@ -35,8 +35,8 @@ export default function Header({ isMenuVisible, setIsMenuVisible }) {
     <StyledHeader>
       <StyledLink to="/">
         <LogoTitle>
-          <img src="./assets/logo.png" />
-          <img src="./assets/PHOTOSNAP.png" />
+          <img src="./assets/logo.png" alt="logo" />
+          <img src="./assets/PHOTOSNAP.png" alt="title" />
         </LogoTitle>
       </StyledLink>
       <MenuInHeader>

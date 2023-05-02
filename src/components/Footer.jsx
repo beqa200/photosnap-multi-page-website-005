@@ -44,7 +44,7 @@ export default function Footer() {
         </BlockDiv>
         <IconsDiv>
           {iconsArr.map((icon) => (
-            <IconApp src={icon} key={Math.random()} />
+            <IconApp src={icon} key={Math.random()} alt="icon" />
           ))}
         </IconsDiv>
         <LinksDiv>

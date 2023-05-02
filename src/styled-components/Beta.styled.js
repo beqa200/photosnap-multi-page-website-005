@@ -5,8 +5,8 @@ export const StyledBeta = styled.div`
     background-image: url("./assets/Bitmap.jpg");
     background-repeat: no-repeat;
     position: relative;
-    margin: auto; //es da 
-    max-width: 375px; //es ar momwons
+    margin: auto;
+    max-width: 375px;
     height: 288px;
 
     @media(min-width: 768px) {

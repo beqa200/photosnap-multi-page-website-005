@@ -34,7 +34,6 @@ const TextContainer = styled.div`
   box-sizing: border-box;
   background-color: ${({ bgColor }) => bgColor};
   @media screen and (min-width: 768px) {
-    // display:flex;
     width: 495px;
     height: 650px;
     padding: 173px 54px 173px 54px;
@@ -85,7 +84,6 @@ const ImageDiv = styled.img`
 `;
 
 const Stick = styled.div`
-// margin-top:-4px;
   position: absolute;
   width: 128px;
   height: 6px;
@@ -142,6 +140,11 @@ const Invite = styled.div`
   line-height: 15.62px;
   color: #ffffff;
   margin-right: 18px;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
 `;
 const BlackInvite = styled.div`
   font-weight: 700;
@@ -149,6 +152,11 @@ const BlackInvite = styled.div`
   line-height: 15.62px;
   color: #000000;
   margin-right: 18px;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
 `;
 const IconWrapper = styled.div`
 display:flex;
