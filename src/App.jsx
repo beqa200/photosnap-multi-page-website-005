@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import { GLobalStyled } from "./styled-components/Global.styled";
 import Footer from "./components/Footer";
 import { useState } from "react";
+import ScrollOnTop from "./ScrollOnTop";
 
 
 
@@ -107,6 +108,7 @@ function App() {
   return (
     <>
       <GLobalStyled height={isMenuVisible ? "100vh" : "100%"} over={isMenuVisible ? "hidden" : "auto"}/>
+      <ScrollOnTop />
       <Header isMenuVisible={isMenuVisible} setIsMenuVisible={setIsMenuVisible}/>
 
       <Routes>
